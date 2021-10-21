@@ -30,36 +30,30 @@ Ex:
 
 ## COMANDOS 
 
-sudo apt install (nome do programa) git -y – instala algum programa
-sudo apt unistall (nome do programa) git -y – desinstala algum programa
+- sudo apt install (nome do programa) git -y – instala algum programa
+- sudo apt unistall (nome do programa) git -y – desinstala algum programa
+- pwd – mostra localização no sistema
+- echo~ - mostra localização no sistema
+- man - manual de comandos do linux
+- mkdir – cria ou move diretório
+- rmdir - apaga diretório vazio
+- rm -rf – apaga diretório não vazio
+- rm -v – explica o que está sendo feito
+- rm -f – ignora arquivos existentes
+- rm -r – apaga diretório não vazio
+- rm – apaga arquivo
+- mv – move ou renomeia um arquivo
+- cp - copia um arquivo (pode copiar e alterar o nome do arquivo no diretorio ao mesmo tempo)
+- ls – lista o que há na pasta
+- ls -l – lista todos os arquivos 
+- ls -a - lista todos os arquivos inclusive os ocultos
+- tmp – mostra os arquivos temporários
+- df -h – mostra os dispositivos que estão montados, sua capacidade e espaço livre
+- touch – toca ou cria um arquivo
+- nano - editor de textos
+- vi - editor de textos (mais poderoso que o nano)
 
-pwd – mostra localização no sistema
-echo~ - mostra localização no sistema
-
-man - manual de comandos do linux
-
-mkdir – cria ou move diretório
-rmdir - apaga diretório vazio
-rm -rf – apaga diretório não vazio
-rm -v – explica o que está sendo feito
-rm -f – ignora arquivos existentes
-rm -r – apaga diretório não vazio
-rm – apaga arquivo
-mv – move ou renomeia um arquivo
-cp - copia um arquivo (pode copiar e alterar o nome do arquivo no diretorio ao mesmo tempo)
-
-ls – lista o que há na pasta
-ls -l – lista todos os arquivos 
-ls -a - lista todos os arquivos inclusive os ocultos
-tmp – mostra os arquivos temporários
-
-df -h – mostra os dispositivos que estão montados, sua capacidade e espaço livre
-
-touch – toca ou cria um arquivo
-nano - editor de textos
-vi - editor de textos (mais poderoso que o nano)
-
-echo – serve para escrever no (STDOUT) Standard OutPut normalmente dentro do próprio shell
+- echo – serve para escrever no (STDOUT) Standard OutPut normalmente dentro do próprio shell
 ```
 echo “dede” (vai escrever dede no shell)
 echo “dede” > a.txt (vai escrever dede dentro do arquivo a.txt)
@@ -70,7 +64,7 @@ Como? Comando → echo “texto q quero” > nome e extensão do arquivo
 ex.: echo “dede” > b.txt 
 ```
 
-cat – olha conteúdo do arquivo
+- cat – olha conteúdo do arquivo
 ```
 cat a.txt (vai ver o que tem dentro do arquivo a.txt)
 ...ou seja, vai achar dede escrito no arquivo a.txt
@@ -79,7 +73,7 @@ cat <nome do arquivo> (mostrará tudo de uma vez)
 cat, indicado para arquivos pequenos
 ```
 
-less – mostra o que tem dentro de um processo ou arquivo em uma página. Barra de espaço vai avançando as páginas.
+- less – mostra o que tem dentro de um processo ou arquivo em uma página. Barra de espaço vai avançando as páginas.
 less pode ser precedido de “|” (pipe) ou não
 ex: 
 ```ps aux | less	(mostrará os processos do sistema uma página do shell por vez)
@@ -87,32 +81,36 @@ less <nome do arquivo> (mostrará uma página por vez)
 less, indicado para arquivos grandes
 ```
 
-head - mostrar as 10 primeiras linhas do arquivo 
-head <nome do arquivo>
+- head - mostrar as 10 primeiras linhas do arquivo 
+```head <nome do arquivo>
 head -5 <nome do arquivo> (visualizar as 5 primeiras linhas do arquivo)
-
-tail – mostrar as 10 últimas linhas do arquivo 
-tail <nome do arquivo> (mostra as últimas 10 linhas)
+```
+- tail – mostrar as 10 últimas linhas do arquivo 
+```tail <nome do arquivo> (mostra as últimas 10 linhas)
 tail -5 <nome do arquivo> (mostra as últimas 5 linhas)
 tail -f – permite ler atualização do arquivo enquanto digitada em outro terminal
+```
 
 Como fazer buscas dentro de um arquivo ?
-less <nome do arquivo> 
+```less <nome do arquivo> 
 /<palavra a ser buscada>
 n vai passear entre as palavras achadas
+```
 
-grep <palavra a ser buscada> <nome do arquivo> (forma padrão - case sensitive)
-grep -i <palavra a ser buscada> <nome do arquivo> (<b>i</b> ignora o case sensitive)
+- grep <palavra a ser buscada> <nome do arquivo> (forma padrão - case sensitive)
+```grep -i <palavra a ser buscada> <nome do arquivo> (<b>i</b> ignora o case sensitive)
 grep -iv <palavra a ser buscada> <nome do arquivo> (ignora o case sensitive e o valor buscado - ou seja, vai listar todos os arquivos, exceto o buscado)
 grep -in <palavra a ser buscada> <nome do arquivo> (ignora o case sensitive e mostra tb a linha da palavra busca)
 grep -ic <palavra a ser buscada> <nome do arquivo> (ignora o case sensitive e mostra a quantidade de vezes que a palavra foi achada)
+```
 
-wc - mostra quantidade de linhas, palavras e caracteres do arquivo
-wc -w - mostra a quantidade de palavras do arquivo
+- wc - mostra quantidade de linhas, palavras e caracteres do arquivo
+```wc -w - mostra a quantidade de palavras do arquivo
 wc -l - mostra a quantidade de linhas do arquivo
 wc -c - mostra a quantidade de caracteres do arquivo
+```
 
-ls * - mostra tudo dentro do diretório e subdiretórios, sem precisar entrar nos subdiretórios
-ls ? - ? usado quando não lembramos alguma letra da busca
+- ls * - mostra tudo dentro do diretório e subdiretórios, sem precisar entrar nos subdiretórios
+- ls ? - ? usado quando não lembramos alguma letra da busca
 
 <img src="../img/unix-bash-1.png">
