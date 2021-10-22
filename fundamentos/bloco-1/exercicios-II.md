@@ -113,6 +113,18 @@ O operador ______ pode ser utilizado para ______ um processo ______, fazendo com
 10. Crie um novo arquivo chamado bunch_of_things.txt com os conteúdos dos arquivos phrases2.txt e countries.txt
 11. Ordene o arquivo bunch_of_things.txt.
 
+### Gabarito
+1. cd 
+2. cat > skills2.txt ou nano skills2.txt
+3. echo ou cat >> skills2.txt | sort
+4. wc -l skills2.txt
+5. cp skills2.txt top_skills.txt | head -3 skills2.txt | sort
+6. cat > phrases2.txt
+7. wc -l phrases2.txt | grep br
+8. wc -l phrases2.txt | grep -v br
+9. cat >> phrases2.txt
+10. cat phrases2.txt countries.txt > bunch_of_things.txt
+11. sort buch_of_things.txt
 
 # Parte II - Permissões
 1. Navegue até a pasta unix_tests ;
@@ -129,3 +141,57 @@ Resultado esperado: -r--r--r-- 1 ana ana 1860 ago 13 11:39 bunch_of_things.txt
 ```
 Resultado esperado: -rw-r--r-- 1 ana ana 1860 ago 13 11:39 bunch_of_things.txt
 ```
+
+### Gabarito
+1. cd
+2. ls -l
+3. chmod a+w bunch_of_things.txt
+4. chmod a-w bunch_of_things.txt
+5. chmod u+w bunch_of_things.txt
+
+# Parte III - Processos e Jobs
+1. Liste todos os processos;
+2. Agora use o comando sleep 30 & ;
+3. Use a listagem de processos para encontrar o PID do processo que está executando o comando sleep 30 e termine a sua execução (mate o processo) ;
+4. Execute novamente o comando sleep 30 , mas agora sem o & . Depois, faça com que ele continue executando em background;
+5. Crie um processo em background que rode o comando sleep por 300 segundos.
+6. Crie mais dois processos que rodem o comando sleep por 200 e 100 segundos, respectivamente.
+```
+Você deve criá-los em foreground (sem usar o & ) e suspendê-los (apertando ctrl+z ) após cada um começar a executar.
+```
+7. Verifique que apenas o processo sleep 300 está em execução com o comando jobs . Suspenda a execução desse processo.
+```
+Você vai precisar trazer o processo para foreground ( fg ) e suspendê-lo ( ctrl+z ), ou enviar um sinal.
+```
+8. Retome a execução do processo sleep 100 em background com o comando bg
+9. Termine a execução de todos os processos sleep (mate os processos) .
+
+### Gabarito
+1. ps
+2. sleep 30 &
+3. ps  ==>  kill <PID>
+4. sleep 30  ==>  CTRL + Z  ==> bg 
+5. sleep 300 &
+6. sleep 200  ==> sleep 100
+7. jobs  ==> fg %<linha do pocesso>  ==> CTRL + Z
+8. bg %<linha do processo>
+9. kill %<linha do processo> ou kill -9 <PID>
+
+
+# Fuleragem
+1. Se você utiliza o Linux , abra o terminal e execute o comando sudo apt-get install cmatrix , ou para pessoas usuárias de macOS , utilize no terminal brew install cmatrix . Depois, execute o comando cmatrix . Quando estiver se sentindo como o Neo , aperte ctrl+c para voltar ao terminal;
+2. No sistema Linux , execute o comando sudo apt-get install fortune , ou no macOS brew install fortune , e após a instalação, crie um arquivo de texto chamado fortune.txt que contenha a sua sorte do dia. Utilize apenas uma linha de comando. Dica: use o comando fortune , e o operador > ;
+3. Conte quantas palavras tem a frase da sua sorte do dia. Dica: use o comando wc ;
+4. Execute o comando sudo apt-get install sl em um terminal Linux , ou brew install sl em um terminal macOS . Após a instalação, execute o comando sl . Agora tente sl -F ;
+5. No sistema Linux , execute o comando sudo apt-get install cowsay , ou brew install cowsay no macOS . Após a instalação, execute o comando cowsay e algo que você queira falar. Agora faça a vaquinha dizer a frase que está gravada no arquivo fortune.txt ;
+6. Descubra os fatores primos usando o comando factor e em seguida o número 42 ;
+7. Veja como fica a sua sorte do dia ao contrário. Dica: utilize o comando rev .
+8. Execute o comando telnet towel.blinkenlights.nl e espere alguns segundos. Lembre-se que você tem mais exercícios para fazer! 😅
+
+
+
+[permissões](http://ftp.kh.edu.tw/Linux/Redhat/en_6.2/doc/gsg/s1-navigating-chmodnum.htm)
+[coleção de recurso shell e bash](https://aurelio.net/shell/)
+[comandos inúteis, porém legais](https://canaltech.com.br/linux/11-comandos-divertidos-e-inuteis-para-usar-no-linux/)
+[input e output](http://www.ee.surrey.ac.uk/Teaching/Unix/unix3.html)
+[lidando com processos](http://www.ee.surrey.ac.uk/Teaching/Unix/unix5.html)
