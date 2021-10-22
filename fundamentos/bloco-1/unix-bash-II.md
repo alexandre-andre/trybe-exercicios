@@ -208,3 +208,10 @@ cat teste.txt
 Uma boa dica é tentar descrever mentalmente o que cada comando faz
 
 `ls, mkdir, cd, pwd, cp, mv, rm, rmdir, clear, cat, less, head, tail, grep, wc, >, >>, |, sort who, man, whatis, apropos, *, ?, chmod, ps, bg, kill, find, history`
+
+
+[permissões](http://ftp.kh.edu.tw/Linux/Redhat/en_6.2/doc/gsg/s1-navigating-chmodnum.htm)
+[coleção de recurso shell e bash](https://aurelio.net/shell/)
+[comandos inúteis, porém legais](https://canaltech.com.br/linux/11-comandos-divertidos-e-inuteis-para-usar-no-linux/)
+[input e output](http://www.ee.surrey.ac.uk/Teaching/Unix/unix3.html)
+[lidando com processos](http://www.ee.surrey.ac.uk/Teaching/Unix/unix5.html)
