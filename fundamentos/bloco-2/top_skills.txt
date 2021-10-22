@@ -1,0 +1,17 @@
+Bootstrap
+OO
+MVC
+JavaScript - pegando
+HTML
+CSS
+ES6
+Bash
+
+O que eu vou aprender na Trybe:
+
+- Unix
+- Bash
+- Git
+- HTML
+- CSS
+- React
