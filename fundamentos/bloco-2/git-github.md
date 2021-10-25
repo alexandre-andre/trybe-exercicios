@@ -118,6 +118,35 @@ Ele servirá para caso você deseje enviar para o dono do repositório original 
 
 Ao clicar nesse botão, você será direcionado para uma página que fará a avaliação se esse `pull request` terá conflitos ou não com o código no repositório original. Caso não tenha, bastão clicar no botão de `Create pull request`
 
+# Git Remove - Removendo arquivo
+- `git rm <arquivo>`
+```javascript
+git add arquivo.txt
+git commit -m 'adiciona arquivo'
+git rm arquivo.txt
+git status 
+// como o arquivo foi add e commitado, ao dar o git rm do arquivo, ele será mostrado como um arquivo deletado pelo git status e isso precisa ser comittado tb
+git commit -m 'apaga arquivo'
+// agora de fato o arquivo foi deletado
+```
+
+## Ressuscitando um commit 
+- `git log --diff-filter=D --summary` para filtrar pelo que há de diferente e filtrar pelos logs que tenham o status `D` (que tenham arquivos deletados), exibindo na forma de  sumário
+```javascript
+git log --diff-filter=D --summary
+git checkout <4 primeiros digitos do hash do commit que apagou o arquivo>~1 <arquivo>
+// mudar para o commit x e ~1 para passar a ser um commit válido, não mais um arquivo deletado
+git status
+// ta lá, voltou a existir! vai aparecer new file: arquivo 
+git add arquivo
+git commit -m 'arquivo recuperado'
+// arquivo recuperado e commitado
+```
+
+# Git ignore
+`touch .gitignore` é um comando que cria um arquivo que vai ignorar arquivos, ou seja, colamos nesse arquivo os arquivos/diretórios que não precisam ir para o GitHub.
+[Toptal](https://www.toptal.com/developers/gitignore)|_busca por ferramenta e cria um arquivo gitignore pré-estabelecido_
+
 # Comandos
 - `git config` configura usuario
 - `git help <comando>` `git <comando> help` ajuda
@@ -141,9 +170,9 @@ nothing added to commit but untracked files present (use "git add" to track)
 - `git reset --soft HEAD~1` volta a o'ultimo commit e mantém os últimos arquivos no stage
 - `git reset --hard <hash>`
 
-### Recuerando commit apagado pelo git reset
+### Recuperando commit apagado pelo git reset
 - `git reflog` visualiza os hashs
-- `git merge < hash>` mergea a hash
+- `git merge <hash>` mergea a hash
 - `git rm` Para remover um arquivo do Git, você tem que removê-lo dos arquivos que estão sendo monitorados (mais precisamente, removê-lo da sua área de seleção) e então fazer o commit. O comando git rm faz isso e também remove o arquivo do seu diretório para você não ver ele como arquivo não monitorado (untracked file) na próxima vez.
 - `git rm -f` Se você modificou o arquivo e já o adicionou na área de seleção, você deve forçar a remoção com a opção -f. Essa é uma funcionalidade de segurança para prevenir remoções acidentais de dados que ainda não foram gravados em um snapshot e não podem ser recuperados do Git.
 - `git mv <arquivo>` renomear um arquivo no Git
