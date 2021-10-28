@@ -16,7 +16,7 @@ Atualmente, a grande maioria das aplicações web são desenvolvidas usando o mo
 - `URL`: _Uniform Resource Locators_ identifica um recurso web específico. Podemos, como exemplo, mudar a nossa busca para https://www.google.com/travel/flights para pesquisar por preços de passagens aéreas. O URL identifica o protocolo que será utilizado para comunicarmos com o servidor (https), o nome do host (google.com) e o recurso que queremos acessar (travel/flights).
 
 
-# O modelo client-servidor e a estrutura de uma plicação web
+# O modelo client-servidor e a estrutura de uma aplicação web
 <img src="../img/cliente-servidor-estrutura.png">
 
 O cliente é responsável por interagir com o usuário. Em uma aplicação Web o cliente é responsável por definir a estrutura , a aparência e mecanismos para lidar com as interações do usuário (como um click, ou um campo para preenchimento).
