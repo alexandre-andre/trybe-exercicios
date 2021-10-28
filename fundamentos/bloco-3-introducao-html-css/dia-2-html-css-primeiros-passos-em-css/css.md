@@ -1,4 +1,5 @@
-# 
+# CSS
+É uma liunguagem de programação orientada a estilização da página.
 
 # Estrutura padrão
 ```html
@@ -15,3 +16,5 @@
 </html>
 ```
 
+[w3schools](https://www.w3schools.com/css/default.asp)
+[csszengarden](http://www.csszengarden.com/)
