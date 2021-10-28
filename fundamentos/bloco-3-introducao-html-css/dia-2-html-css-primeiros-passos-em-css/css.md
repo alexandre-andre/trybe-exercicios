@@ -16,5 +16,21 @@
 </html>
 ```
 
+# Chamada do CSS
+```html
+<!-- link interno -->
+<head>
+    <style>
+        body{}
+    </style>
+</head>
+
+
+<!-- link externo -->
+<link rel="stylesheet" type="text/css" href="caminho e nome do arquivo css">
+```
+
+
+
 [w3schools](https://www.w3schools.com/css/default.asp)
 [csszengarden](http://www.csszengarden.com/)
