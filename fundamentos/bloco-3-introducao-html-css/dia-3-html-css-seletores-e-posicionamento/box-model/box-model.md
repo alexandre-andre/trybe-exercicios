@@ -19,7 +19,6 @@ Ela fica do lado de fora da borda e não é afetada pela estilização do elemen
 <img src="./../../img/ex-box.png">
 
 
-
 ## Referências
 [MDN](https://developer.mozilla.org/pt-BR/docs/Learn/CSS/Building_blocks/The_box_model)
 [W3Scholls](https://www.w3schools.com/css/css_boxmodel.asp)
