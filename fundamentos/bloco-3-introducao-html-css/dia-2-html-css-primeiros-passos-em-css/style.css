@@ -1,0 +1,44 @@
+h1{
+    font-family: sans-serif;
+    font: 65px;
+    color: orange;
+    text-align: end;
+}
+
+body{
+    font-size: 16px;
+}
+
+p{
+    font-weight: 600;
+    font-size: 48px;
+    font-style: italic;
+    text-decoration: underline;
+    text-decoration-color: turquoise;
+}
+
+ul{
+    background-color: aqua;
+    line-height: 24px;
+    list-style: none;
+    font-weight: 600;
+}
+
+.paragrafo{
+    background: cadetblue;
+}
+
+.paragrafo{
+    text-decoration-color: red;
+    animation: mymove 5s infinite;
+}
+
+@keyframes mymove{
+    25%{
+        text-decoration-color: olive;
+    }
+    50%{
+        text-decoration-color: orchid;
+    }
+}
+
