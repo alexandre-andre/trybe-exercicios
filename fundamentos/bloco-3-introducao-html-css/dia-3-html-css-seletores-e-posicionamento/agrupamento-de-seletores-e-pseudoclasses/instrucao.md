@@ -64,3 +64,6 @@ button.input:focus{
 }
 ```
 *DICA: Experimente colocar a propriedade transition nos seus estilos que possuem pseudoclasses.*
+
+[developer mozilla](https://developer.mozilla.org/pt-BR/docs/Web/CSS/Pseudo-classes)
+[n-ésimo item](https://www.treinaweb.com.br/blog/truques-de-como-selecionar-o-n-esimo-item-com-css-usando-a-pseudo-classe-nth-child)

@@ -1,0 +1,19 @@
+h1, p{
+   text-align: center; 
+}
+
+ul li:hover{
+    background-color: burlywood;
+    display: inline;
+    transition: 0.3s;
+    padding: 2px 4px;
+}
+
+ul li:active{
+    color: #fff;
+    transition: 0s;
+}
+
+ul li{
+    list-style-type: none;
+}

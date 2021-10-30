@@ -39,4 +39,5 @@ Exemplo:
 }
 ```
 
+[pratice](https://www.w3schools.com/cssref/playit.asp?filename=playcss_position&preval=initial)
 [w3scholls](https://www.w3schools.com/cssref/pr_class_position.asp)

@@ -1,0 +1,35 @@
+div:hover{
+    border: 1px solid burlywood;
+    transition: 0.5s;
+    border-radius: 15px;
+}
+
+div.primaria:hover{
+    background-color: darkcyan;
+    color:burlywood
+}
+
+div.secundaria:hover{
+    background-color: cornflowerblue;
+    color: burlywood;
+}
+
+div.complementar:hover{
+    background-color: cadetblue;
+    color: burlywood;
+    padding: 8px;
+}
+
+div.escura:hover{
+    background-color: darkblue;
+    color: burlywood;
+}
+
+div.clara:hover{
+    background-color: cyan;
+    color: burlywood;
+}
+
+.italic{
+    font-style: italic;
+}
