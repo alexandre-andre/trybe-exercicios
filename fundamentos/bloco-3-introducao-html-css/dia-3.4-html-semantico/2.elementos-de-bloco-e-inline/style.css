@@ -1,0 +1,35 @@
+body{
+    text-align: center;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+ /* section classificacao */
+section.classificacao ul li{
+    width: 180px;
+    height: 20px;
+    padding: 0 9px 18px;
+}
+
+.first{
+    background-color: gold;
+    margin: auto;
+}
+
+.second{
+    background-color: silver;
+    display: inline-block;
+}
+
+.third{
+    background-color: rgb(230, 166, 0);
+    display: inline-block;
+}
+
+/* section premiacao */
+section.premiacao ul li{
+    display: inline-block;
+}
