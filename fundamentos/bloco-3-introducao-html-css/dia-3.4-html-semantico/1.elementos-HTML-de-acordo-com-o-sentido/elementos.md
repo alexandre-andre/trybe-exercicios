@@ -14,12 +14,12 @@ Qual resposta você daria? Uma possível seria algo do tipo:
 
 ## Tags
 - `<header>` - cabeçalho
-- `<nav>` - links de navegação
+- `<nav>` - conjunto de links de navegação
 - `<main>` - agrupa o conteúdo principal da página: artigo, seção e barra lateral 
-- `<article>` - usada para conteúdos auto-ontidos
-- `<section>` - tipo de conteúdo dentro do artigo 
-- `<aside>` - barra lateral ao lado dos conteúdos
-- `<footer>` - rodapé
+- `<article>` - usada para conteúdos auto-ontidos. Todo o conteúdo presente dentro de um article provê as informações necessárias para sua compreensão, podendo ser reusado em outras páginas.
+- `<section>` - representa uma seção do documento, agrupando conteúdos relacionados. 
+- `<aside>` - representa um conteúdo à parte. Alguns exemplos de sua utilização são: barras laterais e/ou conteúdos adjacentes à um conteúdo principal.
+- `<footer>` - representa o rodapé do documento e/ou de uma seção.
 <div>
 <img src="./../img/bad-semantic.png" style="width: 45%; margin:auto;" >
 <img src="./../img/good-semantic.png" style="width: 45%">
