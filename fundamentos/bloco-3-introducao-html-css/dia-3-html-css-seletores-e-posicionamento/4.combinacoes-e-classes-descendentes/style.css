@@ -1,0 +1,64 @@
+/* titulos e subtitulos */
+h1, h2, h3, h4, h5, h6{
+    color: red;
+}
+
+h1 em, h2 em, h3 em, h4 em, h5 em, h6 em{  
+    font-size: 40px;
+    border: 1px solid #000;
+}
+
+/* ol e ul */
+ol li{
+    background-color: khaki;
+}
+
+ol.green li:nth-child(2n){
+    color: green;
+}
+
+ol.uppercase li:nth-child(odd){
+    text-transform: uppercase;
+}
+
+li{
+    font-size: 20px;
+}
+
+li em{
+    font-weight: 700;
+}
+
+ul.blue li:nth-child(-n + 3){
+    color:blue;
+}
+
+ul.blue li.bg_pink{
+    background-color: pink;
+}
+
+/* links */
+a:active, a:visited{
+ color: blue;   
+}
+
+a:hover{
+    color: rgba(3,107,82);
+    font-weight: 700;
+}
+
+a.orange{
+    color:orange;
+}
+
+a.green{
+    color: green;
+}
+
+a.black{
+    color: black;
+}
+
+a.yellow{
+    color: yellow;
+}
