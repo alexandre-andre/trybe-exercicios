@@ -36,3 +36,10 @@ Saber aplicar elementos HTML de acordo com o sentido e o propósito que cada um 
 [w2scholls - semântica HTML](https://www.w3schools.com/html/html_accessibility.asp)
 
 [htmlrefrence](https://htmlreference.io/)
+
+## Recursos adicionais
+- [Artigo - Pare de chutar e aprenda como funciona o display: inline](https://medium.com/collabcode/pare-de-chutar-e-aprenda-como-funciona-o-display-inline-4ccb7b77371d)
+- [Artigo - Pare de chutar e aprenda como funciona o display: block](https://medium.com/collabcode/pare-de-chutar-e-aprenda-como-funciona-o-display-block-98480c987950)
+- [Artigo - Pare de chutar e aprenda como funciona o display: inline-block](https://medium.com/collabcode/pare-de-chutar-e-aprenda-como-funciona-o-display-inline-block-4e6cba2f19d4)
+- [Developer Drive - What are Semantic HTML Tags and how to use them](https://www.developerdrive.com/what-are-semantic-html-tags/)
+- [W3 - How to Meet WCAG (Quick Reference)](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0)

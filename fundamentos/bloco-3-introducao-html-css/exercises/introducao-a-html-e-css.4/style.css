@@ -2,27 +2,152 @@
     margin: 0;
 }
 
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    color: #93aed1;
+    transition: 0.2s;
+}
+
 body{
     font-family: monospace;
     font-size: 16px;
 }
 
-nav.nav-header{
-    margin-top: 20px;
+ul{
+    margin-top: 15px;
+    list-style-type: square;
 }
 
-nav.nav-header ul li{
-    color: gold;
+ul li{
+    margin: auto;
+}
+
+ul li:hover{
+    list-style-type: none;
+}
+
+/* header */
+header {
+    background-color: black;
+    color: #fff;
+    margin-bottom: 17px;
+}
+
+header h1, header nav{
+    text-align: center;
+    background-color: black ;
+}
+
+
+header nav.nav-header ul{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    font-size: 20px;
+    padding: 5px;
+}
+
+header nav.nav-header ul li{
     padding: 15px;
     list-style: none;
     display: inline-block;
+    margin: 0 25px;
 }
 
-img.img-header{
+nav.nav-header ul li a{
+    color: burlywood;
+    text-shadow: 2px 2px 2px coral;
+    text-decoration: none;
+}
+
+nav.nav-header ul li a:hover{
+    color: cornflowerblue;
+    text-shadow: 2px 2px 2px cornflowerblue;
+    transition: 0.2s;
+}
+
+
+
+/* main */
+main{
+    margin-top: 2px;
+    width: 70%;
+    float: left;
+    margin-bottom: 40px;
+}
+
+h2,  h3,  h4 {
+    text-align: center;
+    margin: 22px auto;
+    border: 1px solid red;
+}
+
+p{
+    margin-bottom: 20px;
+    padding: 0 5%;
+    text-align: justify;
+    text-indent: 5%;
+}
+
+.img-article{
+    height: 300px;
     width: 100%;
-    height: 500px;
 }
 
-img.article{
-    
+img{
+    border-radius: 7px;
+}
+
+iframe{
+    border-radius: 7px;
+    width: 100%;
+}
+
+/* aside */
+aside{
+    margin-top: 20px;
+    float: right;
+    width: 25%;
+    border: 1px solid slateblue;
+}
+
+table{
+    margin-bottom: 30px;
+    margin: auto;
+}
+
+table, th, tr, td {
+    border: 1px solid;
+    border-collapse: collapse;
+}
+
+th{
+    background-color: #93aed1;
+}
+
+tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+
+/* footer */
+footer{
+    clear: both;
+    margin-top: 60px;
+    background-color: black;
+    color: blanchedalmond;
+    height: 60px;
+    text-align: center;
+}
+
+footer p{
+    text-align: center;
+    padding: 20px 0;
+}
+
+section.referencias li{
+    display: inline-block;
 }
