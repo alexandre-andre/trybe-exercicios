@@ -168,3 +168,18 @@ if((ex8_1 + ex8_2 + ex8_3) % 2 == 0){
     console.log('False');
 }
 
+/**
+9. Escreva um programa que defina três números em constantes e retorne true se pelo menos uma das três for ímpar. Caso contrário, ele retorna false .
+- Bonus: use somente um if . 
+*/
+console.log('Exercicio 9');
+
+const ex9_1 = 21335;
+const ex9_2 = 54353;
+const ex9_3 = 39725;
+
+if((ex9_1 + ex9_2 + ex9_3) % 2 != 0){
+    console.log('True');
+}else{
+    console.log('false')
+}
