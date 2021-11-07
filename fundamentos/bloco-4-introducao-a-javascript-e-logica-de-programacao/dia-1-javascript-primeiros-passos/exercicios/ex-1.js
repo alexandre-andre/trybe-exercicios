@@ -152,3 +152,19 @@ if(nota >= 90){
     console.log('F');
 }
 
+/**
+8. Escreva um programa que defina três números em constantes e retorne true se pelo menos uma das três for par. Caso contrário, ele retorna false .
+- Bonus: use somente um if .
+*/
+console.log('Exercicio 8');
+
+const ex8_1 = 152;
+const ex8_2 = 26;
+const ex8_3 = 3423;
+
+if((ex8_1 + ex8_2 + ex8_3) % 2 == 0){
+    console.log('True');
+}else{
+    console.log('False');
+}
+
