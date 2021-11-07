@@ -1,10 +1,10 @@
 /* 
 1. Faça cinco programas, um para cada operação aritmética básica. Seu programa deve ter duas constantes, a e b , definidas no começo com os valores que serão operados. Faça programas para:
-Adição (a + b)
-Subtração (a - b)
-Multiplicação (a * b)
-Divisão (a / b)
-Módulo (a % b)
+- Adição (a + b)
+- Subtração (a - b)
+- Multiplicação (a * b)
+- Divisão (a / b)
+- Módulo (a % b)
 */
 const a = 5;
 const b = 8;
@@ -34,7 +34,9 @@ console.log(comparison)
 let isEven = ((a + b) % 2) == 0;
 console.log(isEven);
 
-/**/
+/*
+2.Faça um programa que retorne o maior de dois números. Defina no começo do programa duas constantes com os valores que serão comparados.
+*/
 console.log("Exercicio 2 - Maior entre 2")
 let num1 = 89
 let num2 = 93
@@ -47,7 +49,10 @@ if(num1 > num2){
     console.log(`${num1} e ${num2} são iguais`)
 }
 
-/**********************PROGRAMA 3 */
+/*
+3.Faça um programa que retorne o maior de três números. Defina no começo do programa três constantes com os valores que serão comparados.
+*/
+const c = 6;
 console.log("Exercicio 3 - Maior de 3")
 if(a > b && a > c){
     console.log("const a é maior que b e c")
@@ -57,7 +62,9 @@ if(a > b && a > c){
     console.log("const c é maior que a e b")
 }
 
-/**********************PROGRAMA 4 */
+/*
+4. Faça um programa que, dado um valor definido numa constante, retorne "positive" se esse valor for positivo, "negative" se for negativo e "zero" caso contrário.
+*/
 console.log("Exercicio 4 - positivo/negativo")
 if(a < 0){
     console.log("const positive")
@@ -67,7 +74,11 @@ if(a < 0){
     console.log("const negative")
 }
 
-/**********************PROGRAMA 5 */
+/*
+5. Faça um programa que defina três constantes com os valores dos três ângulos internos de um triângulo. Retorne true se os ângulos representarem os ângulos de um triângulo e false , caso contrário. Se algum ângulo for inválido o programa deve retornar uma mensagem de erro.
+- Para os ângulos serem de um triângulo válido, a soma dos três devem ser 180 graus.
+- Um ângulo será considerado inválido se não tiver um valor positivo.
+*/
 console.log("Exercicio 5 - angulos triangulo")
 const ang1 = 70 
 const ang2 = 30
@@ -97,16 +108,14 @@ if(ang3 < 180 || ang3 < 0){
     console.error("ang3 não corresponde ao valor angular de um triangulo")
 }
 
-/**********************PROGRAMA 6 */
+/*
+6. Escreva um programa que receba o nome de uma peça de xadrez e retorne os movimentos que ela faz.
+- Como desafio, faça o programa funcionar tanto se receber o nome de uma peça com letras maiúsculas quanto com letras minúsculas, sem aumentar a quantidade de condicionais.
+- Como dica, você pode pesquisar uma função que faz uma string ficar com todas as letras minúsculas (lower case) .
+- Se a peça passada for inválida, o programa deve retornar uma mensagem de erro.
+- Exemplo: bishop (bispo) -> diagonals (diagonais)
+*/
 console.log("Exercicio 6 - xadrez")
 
 
-/**********************PROGRAMA 3 */
-console.log("Exercicio 3")
-
-/**********************PROGRAMA 3 */
-console.log("Exercicio 3")
-
-/**********************PROGRAMA 3 */
-console.log("Exercicio 3")
 
