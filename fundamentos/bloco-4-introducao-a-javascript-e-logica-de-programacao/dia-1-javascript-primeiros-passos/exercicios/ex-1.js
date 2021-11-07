@@ -1,14 +1,21 @@
+/* 
+1. Faça cinco programas, um para cada operação aritmética básica. Seu programa deve ter duas constantes, a e b , definidas no começo com os valores que serão operados. Faça programas para:
+Adição (a + b)
+Subtração (a - b)
+Multiplicação (a * b)
+Divisão (a / b)
+Módulo (a % b)
+*/
 const a = 5;
 const b = 8;
-const c = 6;
-/****************** PROGRAMA 1 */
+
 console.log("Exercicio 1")
 // soma
 let sum = a + b;
 console.log(sum);
 
 // subtracao
-let subtration = a -b;
+let subtration = a - b;
 console.log(subtration);
 
 // div
@@ -27,7 +34,7 @@ console.log(comparison)
 let isEven = ((a + b) % 2) == 0;
 console.log(isEven);
 
-/*******************PROGRAMA 2 **********/
+/**/
 console.log("Exercicio 2 - Maior entre 2")
 let num1 = 89
 let num2 = 93
