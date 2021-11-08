@@ -232,7 +232,7 @@ confereValores(ex10_pC, ex10_pV);
 - - Acima de R$ 4.664,68: alíquota de 27,5% e parcela de R$ 869,36 a deduzir do imposto.
  */
 console.log('Exercício 11')
-let salarioBruto = 7851.37;
+let salarioBruto = 3000;
 let salarioLiquido = ''
 let inss;
 let aliquotaMaxima = 570.88;
@@ -261,24 +261,26 @@ if(salarioBruto <= 1556.94){
     console.log('Desconto INSS R$ ' + descontoInss);
 }
 
+let salario_base = salarioBruto - descontoInss;
+
 // ir sobre o salario bruto
-if(salarioBruto <= 1903.98){
+if(salario_base <= 1903.98){
     console.log('Isento de Imposto de Renda')
-}else if(salarioBruto <= 2826.65){
+}else if(salario_base <= 2826.65){
     ir = 0.075;
-    descontoIr = parseFloat(((salarioBruto * ir) - 142.80).toFixed(2));
+    descontoIr = parseFloat(((salario_base * ir) - 142.80).toFixed(2));
     console.log('Desconto IR R$ ' + descontoIr);
-}else if(salarioBruto <= 3751.05){
+}else if(salario_base <= 3751.05){
     ir = 0.15;
-    descontoIr = parseFloat(((salarioBruto * ir) - 354.80).toFixed(2));
+    descontoIr = parseFloat(((salario_base * ir) - 354.80).toFixed(2));
     console.log('Desconto IR R$ ' + descontoIr);
-}else if(salarioBruto <= 4665.68){
+}else if(salario_base <= 4665.68){
     ir = 0.225;
-    descontoIr = parseFloat(((salarioBruto * ir) - 636.16).toFixed(2));
+    descontoIr = parseFloat(((salario_base * ir) - 636.16).toFixed(2));
     console.log('Desconto IR R$ ' + descontoIr);
 }else{
     ir = 0.275;
-    descontoIr = parseFloat(((salarioBruto * ir) - 869.36).toFixed(2));
+    descontoIr = parseFloat(((salario_base * ir) - 869.36).toFixed(2));
     console.log('Desconto IR R$ ' + descontoIr);
 }
 
