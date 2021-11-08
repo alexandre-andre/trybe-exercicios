@@ -194,23 +194,24 @@ if((ex9_1 + ex9_2 + ex9_3) % 2 != 0){
 */
 console.log('Exercicio 10');
 
-const ex10_pC = 50;
+const ex10_pC = -2;
 const ex10_pV = 100; 
+let lucro;
 // Atente que, sobre o custo do produto, incide um imposto de 20%.
 let impostoSobreOCusto = 20/100;
-let pCmaisImposto = ex10_pC + (ex10_pC * impostoSobreOCusto);
-console.log(pCmaisImposto)
+let valorCustoTotal = ex10_pC + (ex10_pC * impostoSobreOCusto);
+// console.log(valorCustoTotal);
 
 // O lucro de um produto é o resultado da subtração do valor de venda pelo custo do mesmo, sendo que o imposto de 20% também faz parte do valor de custo
-function confere(ex10_pC, ex10_pV){
-    let result = ''
-    if(ex10_pC < 0 || ex10_pV < 0){
-        result = 'Error: algum dos valores é menor que zero';
-    }else{
-        result = 'Valores preenchidos corretamente'
-    }
-    return result
+function confereValores(ex10_pC, ex10_pV){
+    let lucro = ''
+        if(ex10_pC < 0 || ex10_pV < 0){
+            console.log('Error: algum dos valores é menor que zero');
+        }else{
+            lucro = (ex10_pV - valorCustoTotal) * 1000;
+            console.log('Valores preenchidos corretamente')
+        }
+    return lucro
 }
-console.log(confere(ex10_pC, ex10_pV))
-
+console.log(confereValores(ex10_pC, ex10_pV));
 
