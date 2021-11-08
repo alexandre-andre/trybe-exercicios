@@ -141,5 +141,25 @@ consone.log(indexOfTask);
 // 1
 ```
 
+# ORDENAR ARRAYS
 
-[w3Scholls - tudo sobre Array](https://www.w3schools.com/jsref/jsref_obj_array.asp)
+## Ordenar ARRAYS de números de forma CRESCENTE
+```javascript
+let array = [9, 80, 23, 5, 35, 33];
+
+array.sort((a, b) => a - b);
+console.log(array);
+// [5, 9, 23, 33, 35, 80]
+```
+
+## Ordenar ARRAY de números de forma DECRESCENTE
+```javascript
+let array = [9, 80, 23, 5, 35, 33];
+
+array.sort((a, b) => b - a);
+console.log(array);
+// [80, 35, 33, 23, 9, 5]
+```
+
+- [w3Scholls - tudo sobre Array](https://www.w3schools.com/jsref/jsref_obj_array.asp)
+- [ordem de arrays](https://ricardo-reis.medium.com/o-m%C3%A9todo-sort-do-array-javascript-482576734e0a#:~:text=Para%20classificar%20um%20array%20de,scores%20numericamente%20em%20ordem%20crescente.)
