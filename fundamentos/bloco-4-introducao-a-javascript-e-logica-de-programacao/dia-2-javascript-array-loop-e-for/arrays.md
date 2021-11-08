@@ -142,3 +142,4 @@ consone.log(indexOfTask);
 ```
 
 
+[w3Scholls - tudo sobre Array](https://www.w3schools.com/jsref/jsref_obj_array.asp)
