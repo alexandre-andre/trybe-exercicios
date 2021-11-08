@@ -206,14 +206,14 @@ let valorCustoTotal = ex10_pC + (ex10_pC * impostoSobreOCusto);
 function confereValores(ex10_pC, ex10_pV){
     let lucro = ''
         if(ex10_pC < 0 || ex10_pV < 0){
-            console.log('Error: algum dos valores é menor que zero');
+            console.error('Error: algum dos valores é menor que zero');
         }else{
             lucro = (ex10_pV - valorCustoTotal) * 1000;
             console.log('Valores preenchidos corretamente')
         }
     return lucro
 }
-console.log(confereValores(ex10_pC, ex10_pV));
+confereValores(ex10_pC, ex10_pV);
 
 
 /**
@@ -231,6 +231,7 @@ console.log(confereValores(ex10_pC, ex10_pV));
 - - De R$ 3.751,06 a R$ 4.664,68: alíquota de 22,5% e parcela de R$ 636,13 a deduzir do imposto
 - - Acima de R$ 4.664,68: alíquota de 27,5% e parcela de R$ 869,36 a deduzir do imposto.
  */
+console.log('Exercício 11')
 let salarioBruto = 7851.37;
 let salarioLiquido = ''
 let inss;
