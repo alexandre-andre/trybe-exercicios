@@ -65,12 +65,7 @@ console.log(typeof(patientInfo));
 - `>=`	greater than or equal to
 - `<=`	less than or equal to
 - `?`	ternary operator
-
-## Operadores Lógicos
-- `&&`	logical and
-- `||`	logical or
-- `!`	logical not
-
+- 
 
 # Operadores Bit a Bit
 |operador |descrição |exemplo |o mesmo que |resultado |decimal |
