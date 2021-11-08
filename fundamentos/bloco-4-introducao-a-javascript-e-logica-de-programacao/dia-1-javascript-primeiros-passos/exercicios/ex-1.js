@@ -215,3 +215,72 @@ function confereValores(ex10_pC, ex10_pV){
 }
 console.log(confereValores(ex10_pC, ex10_pV));
 
+
+/**
+11. Uma pessoa que trabalha de carteira assinada no Brasil tem descontados de seu salário bruto o INSS e o IR. Faça um programa que, dado um salário bruto, calcule o líquido a ser recebido.
+- A notação para um salário de R$1500,10, por exemplo, deve ser 1500.10. Para as faixas de impostos, use as seguintes referências:
+- INSS (Instituto Nacional do Seguro Social)
+- - Salário bruto até R$ 1.556,94: alíquota de 8%
+- - Salário bruto de R$ 1.556,95 a R$ 2.594,92: alíquota de 9%
+- - Salário bruto de R$ 2.594,93 a R$ 5.189,82: alíquota de 11%
+- - Salário bruto acima de R$ 5.189,82: alíquota máxima de R$ 570,88
+- IR (Imposto de Renda)
+- - Até R$ 1.903,98: isento de imposto de renda
+- - De R$ 1.903,99 a 2.826,65: alíquota de 7,5% e parcela de R$ 142,80 a deduzir do imposto
+- - De R$ 2.826,66 a R$ 3.751,05: alíquota de 15% e parcela de R$ 354,80 a deduzir do imposto
+- - De R$ 3.751,06 a R$ 4.664,68: alíquota de 22,5% e parcela de R$ 636,13 a deduzir do imposto
+- - Acima de R$ 4.664,68: alíquota de 27,5% e parcela de R$ 869,36 a deduzir do imposto.
+ */
+let salarioBruto = 7851.37;
+let salarioLiquido = ''
+let inss;
+let aliquotaMaxima = 570.88;
+let descontoInss;
+let ir;
+let descontoIr;
+
+// inss sobre o salario bruto
+if(salarioBruto <= 1556.94){
+    inss = 8/100;
+    descontoInss = parseFloat((salarioBruto * inss).toFixed(2));
+    console.log('Desconto INSS R$ ' + descontoInss); 
+
+}else if(salarioBruto <= 2594.92){
+    inss = 9/100;
+    descontoInss = parseFloat((salarioBruto * inss.toFixed(2)));
+    console.log('Desconto INSS R$ ' + descontoInss);
+
+}else if(salarioBruto <= 5189.82){
+    inss = 0.11;
+    descontoInss = parseFloat((salarioBruto * inss).toFixed(2));
+    console.log('Desconto INSS R$ ' + descontoInss);
+
+}else{
+    descontoInss = aliquotaMaxima;
+    console.log('Desconto INSS R$ ' + descontoInss);
+}
+
+// ir sobre o salario bruto
+if(salarioBruto <= 1903.98){
+    console.log('Isento de Imposto de Renda')
+}else if(salarioBruto <= 2826.65){
+    ir = 0.075;
+    descontoIr = parseFloat(((salarioBruto * ir) - 142.80).toFixed(2));
+    console.log('Desconto IR R$ ' + descontoIr);
+}else if(salarioBruto <= 3751.05){
+    ir = 0.15;
+    descontoIr = parseFloat(((salarioBruto * ir) - 354.80).toFixed(2));
+    console.log('Desconto IR R$ ' + descontoIr);
+}else if(salarioBruto <= 4665.68){
+    ir = 0.225;
+    descontoIr = parseFloat(((salarioBruto * ir) - 636.16).toFixed(2));
+    console.log('Desconto IR R$ ' + descontoIr);
+}else{
+    ir = 0.275;
+    descontoIr = parseFloat(((salarioBruto * ir) - 869.36).toFixed(2));
+    console.log('Desconto IR R$ ' + descontoIr);
+}
+
+salarioLiquido = salarioBruto - descontoInss - descontoIr
+let salarioLiquidoArredondado = parseFloat(salarioLiquido.toFixed(2))
+console.log('Salário líquido R$ ' + salarioLiquidoArredondado);
