@@ -21,7 +21,7 @@ console.log(myName + ', ' + birthCity);
 // André, Rio de Janeiro - RJ
 
 birthYear = 2030;
-console.lg(birthYear);
+console.log(birthYear);
 // 2030
 
 birthCity = 'São Paulo - SP';
