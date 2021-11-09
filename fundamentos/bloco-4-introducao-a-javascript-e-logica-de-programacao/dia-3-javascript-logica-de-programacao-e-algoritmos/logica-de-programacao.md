@@ -87,3 +87,12 @@ __Um código muito complexo não é uma boa prática no mundo da programação__
 Para medir a complexidade de um código, existe a **complexidade ciclomática** , que é uma métrica de software que considera os caminhos independentes que o algoritmo pode tomar. E, quanto maior for a **complexidade ciclomática** , mais difícil é fazer o acompanhamento do código, sua manutenção e testagem.
 
 Caso o seu código apresenta apenas uma condicional (somente um `if/else` ), ele tem dois caminhos, ou faz isso ou faz aquilo. E, quanto mais caminhos tiver, mais complexo será. Existem várias formas de aumentar a quantidade desses caminhos, _não só usando condicionais_. Pode-se, também, por exemplo, aumentar usando laços de repetição, como `for`.
+
+
+## Recursos adicionais
+- [W3Schools JavaScript Arrays](https://www.w3schools.com/js/js_arrays.asp)
+- [Grasshopper - um aplicativo para praticar o básico de programação](https://grasshopper.app/)
+- [Step up your coding game - The new way to improve your programming - skills while having fun and getting noticed](https://www.codingame.com/start)
+- [Code.org - treinando lógica de programação de maneira lúdica](https://code.org/learn)
+- [The 9 Best Coding Games to Build Your Programming Skills](https://www.makeuseof.com/tag/best-programming-games/)
+- [CheckiO - Coding games for beginners and advanced programmers](https://checkio.org/)
