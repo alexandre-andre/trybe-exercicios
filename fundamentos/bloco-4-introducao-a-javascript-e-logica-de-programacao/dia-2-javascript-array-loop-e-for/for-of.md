@@ -53,3 +53,5 @@ for (let sum of numbers){
 // 21
 // 31
 ```
+
+[developer mozilla](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/for...of)
