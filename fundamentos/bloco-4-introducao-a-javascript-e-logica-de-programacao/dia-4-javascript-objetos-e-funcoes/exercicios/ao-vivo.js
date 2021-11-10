@@ -64,12 +64,18 @@ for (let key in person) {
 
 // FUNCAO
 console.log('FUNCAO')
-function calculaIPRF(salario){
+let arrSalario = [3000, 4000, 5000];
+let n = 3
+function calculaIPRF(salario, base){
     let resultado = (salario /  2) * salario;
 
     return resultado
 }
 calculaIPRF()
-console.log('calculo IPRF:', calculaIPRF(1_000))
-console.log('calculo IPRF:', calculaIPRF(2_000))
-console.log('calculo IPRF:', calculaIPRF(3_000))
+console.log('calculo IPRF:', calculaIPRF(1_000, 2))
+console.log('calculo IPRF:', calculaIPRF(2_000, 3))
+console.log('calculo IPRF:', calculaIPRF(3_000, 4))
+
+for (let i = 0; i < n; i++){
+    console.log(calculaIPRF(arrSalario[i],4));
+}

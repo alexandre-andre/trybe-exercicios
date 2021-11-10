@@ -57,3 +57,47 @@ for (let key in person) {
 // [ 'John Wick', 'Duelo de Titãs' ]
 // { street: 'Cadete Polonia', number: '524' }
 ```
+
+
+### Outros exemplos
+O let sendo passado em uma chave após o array, vai retornar os valores do array.
+```javascript
+let cars = ['Saab', 'Volvo', 'BMW'];
+
+for (let key in cars) {
+    console.log(cars[key]);
+}
+// Saab
+// Volvo
+// BMW
+
+for (let key in cars) {
+    console.log(key);
+}
+// 0
+// 1
+// 2
+```
+
+
+o let sendo passado solo, vai retornar a propriedade já sendo passado em um colchete após o objeto, retorna o valor do objeto.
+```javascript
+let car = {
+    type: 'Ford',
+    model: 'Raptor',
+    color: 'Dark blue'
+}
+
+for (let key in car) {
+    console.log(key, car[key])
+}
+// type Ford
+// model Raptor
+// color Dark blue
+```
+
+
+É importante ressaltar que existe uma **diferença** entre o `For/in` e o `For/of`. O `For/in` percorre as propriedades dos objetos que forem enumeráveis com base na ordem de inserção, e não nos valores das propriedades.
+
+Se percorrermos um objeto, também teremos o mesmo resultado. O `For/in` irá percorrer a propriedade declarada, e não o seu valor em si.
+Já o `For/of` percorre os elementos dos objetos iteráveis através dos seus respectivos valores, e não dos índices como o `For/in` .
