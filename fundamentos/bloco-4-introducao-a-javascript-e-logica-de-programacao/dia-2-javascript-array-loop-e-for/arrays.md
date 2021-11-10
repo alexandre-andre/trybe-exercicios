@@ -68,7 +68,7 @@ pizzas = ['4 Queijos', 'Calabresa', 'Marguerita', 'Frango com Catupiry', 'Brigad
 // console.log(pizzas[4]);
 // console.log(pizzas[5]);
 
-for(let i = 0; i < pizzas.length ; i++){
+for (let i = 0; i < pizzas.length ; i++) {
     console.log(pizzas[i]);
 }
 // 4 Queijos
