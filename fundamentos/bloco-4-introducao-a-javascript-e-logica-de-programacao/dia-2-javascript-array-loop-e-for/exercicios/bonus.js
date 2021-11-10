@@ -30,7 +30,7 @@ let numbers2 = []
 
 for (let i = 0; i < numbers.length; i++) {
 
-    if(i == numbers.length - 1) {
+    if (i == numbers.length - 1) {
         
         numbers2.push(numbers[i] * 2)
 
