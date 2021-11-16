@@ -6,7 +6,8 @@ let array = [2, 4, 6, 7, 10, 0, -3];
 
 function lessValue(x) {
 
-    let lessNum = Math.min(...x)
+    let lessNum = Math.min(...x);
+    return x.indexOf(lessNum);
     return lessNum;
 }
 console.log(lessValue(array))
