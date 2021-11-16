@@ -12,6 +12,6 @@ function mostValue(arr) {
         }
     }
 
-    return biggerNum
+    return arr.indexOf(biggerNum);
 }
 console.log(mostValue(arr))
