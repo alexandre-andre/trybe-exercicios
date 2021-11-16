@@ -66,7 +66,7 @@ for (let key in person) {
 console.log('FUNCAO')
 let arrSalario = [3000, 4000, 5000];
 let n = 3
-function calculaIPRF(salario, base){
+function calculaIPRF(salario, base) {
     let resultado = (salario /  2) * salario;
 
     return resultado
