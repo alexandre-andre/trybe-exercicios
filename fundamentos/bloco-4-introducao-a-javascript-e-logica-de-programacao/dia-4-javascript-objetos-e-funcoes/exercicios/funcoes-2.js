@@ -7,7 +7,7 @@ function mostValue(arr) {
 
     for (let i = 0; i < arr.length; i++) {
         
-        if (arr[i] > arr[arr.length - 1]) {
+        if (arr[i] > biggerNum) {
             biggerNum = arr[i]
         }
     }
