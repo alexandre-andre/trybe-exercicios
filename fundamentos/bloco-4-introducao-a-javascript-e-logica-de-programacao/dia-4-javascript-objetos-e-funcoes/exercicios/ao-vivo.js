@@ -76,6 +76,6 @@ console.log('calculo IPRF:', calculaIPRF(1_000, 2))
 console.log('calculo IPRF:', calculaIPRF(2_000, 3))
 console.log('calculo IPRF:', calculaIPRF(3_000, 4))
 
-for (let i = 0; i < n; i++){
+for (let i = 0; i < n; i++) {
     console.log(calculaIPRF(arrSalario[i],4));
 }
