@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>  
+  <main>
+    <div id="start"></div>
+    nó
+    <p>elemento</p>
+  </main>
+
+  <main id="paiDoPai">
+    <section id="pai">
+      <section id="primeiroFilho"></section>
+      <section id="elementoOndeVoceEsta">
+        <section id="primeiroFilhoDoFilho"></section>
+        <section id="segundoEUltimoFilhoDoFilho"></section>
+      </section>
+      Atenção!
+      <section id="terceiroFilho"></section>
+      <section id="quartoEUltimoFilho"></section>
+    </section>
+  </main>
+
+  <ol>
+    <li>Acesse o elemento elementoOndeVoceEsta .</li>
+    <li>Acesse pai a partir de elementoOndeVoceEsta e adicione uma color a ele.</li>
+    <li>Acesse o primeiroFilhoDoFilho e adicione um texto a ele. Você se lembra dos vídeos da aula anterior, como fazer isso?</li>
+    <li>Acesse o primeiroFilho a partir de pai .</li>
+    <li>Agora acesse o primeiroFilho a partir de elementoOndeVoceEsta .</li>
+    <li>Agora acesse o texto Atenção! a partir de elementoOndeVoceEsta .</li>
+    <li>Agora acesse o terceiroFilho a partir de elementoOndeVoceEsta .</li>
+    <li>Agora acesse o terceiroFilho a partir de pai .</li>
+  </ol>
+
+
+  <div style="color: red;">
+<code>
+    <pre>
+      console.log(document.getElementById('start').nextSibling) // 'nó'
+      console.log(document.getElementById('start').nextElementSibling) // elemento p
+      
+      // 1
+      console.log(document.getElementById('elementoOndeVoceEsta'));
+      
+      // 2
+      let elementoOndeVoceEsta = document.getElementById('elementoOndeVoceEsta').parentNode;
+      console.log(elementoOndeVoceEsta);
+      elementoOndeVoceEsta.style.color = 'red';
+      
+      // 3
+      console.log(document.getElementById('primeiroFilhoDoFilho'));
+      // paiDoPai.firstElementChild.firstChild.innerText = 'texto do elemento filho'
+      let primeiroFilhoDoFilho = document.getElementById('primeiroFilhoDoFilho');
+      primeiroFilho.innerText = '3 - Texto do elemento primeiroFilhoDoFilho';
+      
+      // // 4
+      let pai = document.getElementById('pai');
+      console.log(document.getElementById('pai').firstChild);
+      
+      // 5
+      console.log(elementoOndeVoceEsta.firstChild);
+      
+      // 6
+      console.log(elementoOndeVoceEsta.textContent);
+      
+      // 7
+      console.log(elementoOndeVoceEsta.firstElementChild.nextElementSibling.nextElementSibling);
+      
+      // // 8
+      console.log(pai.firstElementChild.nextElementSibling.nextElementSibling)
+    </pre>
+</code>
+    </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
