@@ -57,7 +57,43 @@
   </head>
   <body>
     <script>
-      // COLOQUE SEU CÓDIGO AQUI
+      const body = document.body;
+      const h1 = document.createElement('h1');
+      // 1
+      body.appendChild(h1).innerText = 'Exercício 5.2 - JavaScript DOM';
+
+      // 2
+      const main = document.createElement('main');
+      main.className = 'main-content';
+      body.appendChild(main);
+
+      // 3
+      const section = document.createElement('section');
+      section.className = 'center-content';
+      main.appendChild(section);
+
+      // 4
+      const p = document.createElement('p');
+      section.appendChild(p).innerText = 'Eu serei um bom programador, assim como meu irmão!'
+
+      // 5
+      main.appendChild(section);
+      main.className = 'left-content';
+
+      // 6
+      main.appendChild(section);
+      main.className = 'right-content';
+
+      // 7
+      const img = document.createElement('img');
+      img.src = 'https://picsum.photos/200'
+      img.className = 'small-image';
+      section.appendChild(img);
+
+      // 8
+      let ul = document.createElement('ul')
+      let li = document.createElement('li')
+      
     </script>
   </body>
 </html>

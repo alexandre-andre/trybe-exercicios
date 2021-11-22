@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <header>
+      <h2 id="page-title">Título</h2>
+      <p id="paragraph">Dê uma cor para este parágrafo!</p>
+      <h4 id="subtitle">Subtítulo</h4>
+      <p id="second-paragraph">Segundo parágrafo!</p>
+    </header>
+    <script>
+      const paragraph = document.getElementById("paragraph");
+      paragraph.style.color = "red";
+      
+      let pageTitle = document.getElementById('page-title');
+      pageTitle.innerText = 'A volta dos que não foram!'
+      
+      let secondParagraph = document.getElementById('second-paragraph');
+    //   console.log(secondParagraph)
+      secondParagraph.innerText = 'Aprendendo a manipular o DOM'
+
+      subtitle.innerText = 'Será que eles já chegaram lá?'
+
+    //   add classes identicas aos paragrafos
+    paragraph.className = 'paragrafo'
+    secondParagraph.className = 'paragrafo'
+    // console.log(paragraph, secondParagraph)
+    
+    // recupera os paragrafos via js com get
+    let paragrafo = document.getElementsByClassName('paragrafo');
+    paragrafo[0].innerText = 'Alterei o texto'
+    paragrafo[0].style.color = 'blue'
+
+    // 
+    let sub = document.getElementsByTagName('h4')[0].style.backgroundColor = 'yellow'
+    
+    console.log('all', document.querySelectorAll('p'))
+    </script>
+  </body>
+</html>

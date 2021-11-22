@@ -67,4 +67,5 @@ body {
   
   .tech {
     transform: translateY(-20px);
+    background-color: red;
   }

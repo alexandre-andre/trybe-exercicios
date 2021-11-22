@@ -11,23 +11,41 @@ const myWebpage = document.getElementById('my-spotrybefy');
 
 // 2. Crie uma função que adicione a classe 'tech' ao elemento `li` quando for clicado.
 // 2.1. Deve existir apenas um elemento com a classe 'tech'. Como você faz isso?
-function addClassTech(event) {
-  const quemTemTech = document.querySelector('.tech'); // guarda class tech
-  quemTemTech.classList.remove('tech'); // remove 
-  event.target.classList.add('tech'); // add 
-  // event.target.style.background = 'red'
+// function addClassTech(event) {
+//   const quemTemTech = document.querySelector('.tech'); // guarda class tech
+//   quemTemTech.classList.remove('tech'); // remove 
+//   event.target.classList.add('tech'); // add 
+//   // event.target.style.background = 'red'
+// }
+
+// firstLi.addEventListener('mouseover', addClassTech)
+// secondLi.addEventListener('mouseover', addClassTech)
+// thirdLi.addEventListener('mouseover', addClassTech)
+function addClassTech(event){
+    event.target.classList.add('tech');
+    event.target.style.backgroundColor = 'red'
 }
 
-firstLi.addEventListener('mouseover', addClassTech)
-secondLi.addEventListener('mouseover', addClassTech)
-thirdLi.addEventListener('mouseover', addClassTech)
+firstLi.addEventListener('mouseover', addClassTech);
+secondLi.addEventListener('mouseover', addClassTech);
+thirdLi.addEventListener('mouseover', addClassTech);
+
+function removeClassTech(event){
+  event.target.classList.remove('tech')
+  event.target.remove(style)
+}
+firstLi.addEventListener('mouseleave', removeClassTech)
+secondLi.addEventListener('mouseleave', removeClassTech);
+thirdLi.addEventListener('mouseleave', removeClassTech)
 
 // 3. Crie uma função que, ao digitar na caixa de texto, altere o texto do elemento
 // com a classe 'tech';
 function alteraText() {
-  quemTemTech.innerText = input.value
-  firstLi.innerText = quemTemTech
-  secondLi.innerText = input.value  
+  let valor = input.value;
+  console.log(valor);
+  let liEscreve = document.querySelector('li.tech')
+  liEscreve.innerText = 'asdasdsa'
+  console.log(liEscreve)
 }
 input.addEventListener('keyup', alteraText)
 
