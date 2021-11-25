@@ -38,7 +38,7 @@
   </ol>
 
 
-  <div style="color: red;">
+  <div style="background-color: yellow; color: red;">
 <code>
     <pre>
       console.log(document.getElementById('start').nextSibling) // 'nó'
@@ -66,7 +66,8 @@
       console.log(elementoOndeVoceEsta.firstChild);
       
       // 6
-      console.log(elementoOndeVoceEsta.textContent);
+      console.log(elementoOndeVoceEsta.nextSibling);
+      console.log(document.getElementById('elementoOndeVoceEsta').nextSibling);
       
       // 7
       console.log(elementoOndeVoceEsta.firstElementChild.nextElementSibling.nextElementSibling);
