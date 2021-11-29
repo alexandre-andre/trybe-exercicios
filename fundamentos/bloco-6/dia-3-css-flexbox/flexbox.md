@@ -51,3 +51,11 @@
 - `align-content` trabalha junto ao **align-items**, ajustando o espaçamento entre as alinhas
 - - *space-around* espaçamento ao redor do itens
 - - *space-betwen* espaçamento entre os itens
+
+### Referências
+- [w3schools](https://www.w3schools.com/css/css3_flexbox.asp)
+- [css-tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+- [jogo do sapinho](https://flexboxfroggy.com/)
+- [flex box defense](http://www.flexboxdefense.com/)
+- [flex playground](https://the-echoplex.net/flexyboxes/)
+- [propriedades do flex container](https://codepen.io/enxaneta/full/adLPwv)
