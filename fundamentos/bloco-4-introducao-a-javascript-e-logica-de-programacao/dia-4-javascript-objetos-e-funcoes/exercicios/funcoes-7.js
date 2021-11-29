@@ -31,10 +31,10 @@ console.log(verificaFimPalavra('trybe', 'be'))
 function verificaFim(word, end) {
     // transforma em um array, inverte e transforma em uma string
     let invertWord = word.split('').reverse().join('');
+    // console.log('inverWord -', invertWord);
     let invertEnd = end.split('').reverse().join('');
+    // console.log('inverEnd -', invertEnd);
     let result;
-
-
     for (let i = 0; i < invertEnd.length; i++) {
         // se o valor que está sendo acessado no indice i em invertWord for diferente do valor que está sendo acesso no indice i em inverEnd
         if (invertWord[i] !== invertEnd[i]) {
@@ -45,7 +45,18 @@ function verificaFim(word, end) {
             result = true;
         }
     }
-
     return result
 }
-console.log(verificaFim('jorel', 'eu'));
+console.log(verificaFim('joarfernando', 'nando'), ' - solucao 2');
+
+
+
+
+
+
+// // SOLUCAO 3 - reversao 2
+// function madMax (str, word) {
+//     let strRev = str.join('').reverse('')
+
+// }
+// console.log(madMax('joaofernando', 'fernan'))
