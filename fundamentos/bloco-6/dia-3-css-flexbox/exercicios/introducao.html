@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox - Flex Flow</title>
+    <style>
+      .box {
+        color: #9069EF;
+        background-color: rgb(243, 243, 243);
+        border: 2px solid #232525;
+        font-size: 50px;
+        height: 60px;
+        margin: 10px 5px;
+        text-align: center;
+        width: 30%;
+      }
+
+      .box-container1 {
+        background-color: #0fa36b;
+        display: flex;
+        /* ADICIONE AQUI SEUS TESTES */
+        flex-direction: row-reverse;
+      }
+      .box-container2 {
+        background-color: #0fa36b;
+        display: flex;
+        /* ADICIONE AQUI SEUS TESTES */
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .box-container3 {
+        background-color: #0fa36b;
+        display: flex;
+        /* ADICIONE AQUI SEUS TESTES */
+        flex-flow: column-reverse wrap-reverse;
+        justify-content: end; 
+      }
+    </style>
+
+  </head>
+  <body>
+    <div class="box-container1">
+      <div class="box">10000</div>
+      <div class="box">20000</div>
+      <div class="box">30000</div>
+      <div class="box">40000</div>
+      <div class="box">50000</div>
+    </div>
+    <div class="box-container2">
+        <div class="box">111111</div>
+        <div class="box">222222</div>
+        <div class="box">333333</div>
+        <div class="box">444444</div>
+        <div class="box">555555</div>
+      </div>
+      <div class="box-container3">
+        <div class="box">100000</div>
+        <div class="box">200000</div>
+        <div class="box">300000</div>
+        <div class="box">400000</div>
+        <div class="box">500000</div>
+      </div>
+  </body>
+
+  <ol>
+    <li>Teste as possibilidades ( row , column , row-reverse e column-reverse ) para a propriedade flex-direction .</li>
+    <li>Teste as possibilidades ( wrap e nowrap ) para a propriedade flex-wrap .</li>
+    <li>Teste as possibilidades para a propriedade flex-flow .</li>    
+  </ol>
+</html>
