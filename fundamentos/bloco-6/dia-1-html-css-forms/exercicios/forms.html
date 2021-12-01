@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <!-- DatePickerX -->
     <link rel="stylesheet" href="dist/css/DatePickerX.min.css">
-
+    <link rel="stylesheet" type="text/css" href="../exercicios/style.css">
     <title>Formulário</title>
 </head>
 <body>
@@ -63,23 +63,17 @@
         </div>
 
         <div class="form-group">
-            <label for="myDate">
-                <input class="form-control" id="myDate" type="date">
+            <label for="myDate">Data
+                <input class="form-control" id="myDate" type="text" placeholder="apenas números">
             </label>
-
-            <div>
-                <label class="real">
-                    <input type="text" name="realDPX-min" placeholder="Choice start date">
-                </label>
-            
-                <label class="real">
-                    <input type="text" name="realDPX-max" placeholder="Choice end date">
-                </label>
-            </div>
         </div>
 
         <div class="form-group">
             <textarea class="form-control" name=""" cols="30" rows="10"></textarea>
+        </div>
+
+        <div class="form-group">
+            <input type="submit" id="botao-enviar" class="form-control btn btn-info" value="Enviar"></input>
         </div>
 
 
@@ -89,9 +83,9 @@
 
 
     <!-- JustValidate -->
-    <script src="./path/to/just-validate.min.js"></script>
+    <!-- <script src="./path/to/just-validate.min.js"></script> -->
     <!-- DAtePickerX -->
-    <script src="dist/js/DatePickerX.min.js"></script>
+    <!-- <script src="dist/js/DatePickerX.min.js"></script> -->
     <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
