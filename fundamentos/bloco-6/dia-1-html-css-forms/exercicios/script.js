@@ -1,89 +1,69 @@
-let date = document.getElementById('myDate')
-date.DatePickerX.init();
-date.format('dd/mm/yyyy')
 
-window.addEventListener('DOMContentLoaded', function()
-        {
-            var $min = document.querySelector('.real [name="realDPX-min"]'),
-                $max = document.querySelector('.real [name="realDPX-max"]');
 
-            $min.DatePickerX.init({
-                mondayFirst: true,
-                minDate    : new Date(2021, 5, 9),
-                maxDate    : $max
-            });
+    // console.dir(estadosSiglas.estados);
+    
+function criaOption() {
+    let select = document.getElementById('input-select');
+    const estados = 
+    [
+        'Acre',
+        'Alagoas',
+        'Amapá',
+        'Amazonas',
+        'Bahia',
+        'Ceará',
+        'Distrito Federal',
+        'Espirito Santo',
+        'Goiás',
+        'Maranhão',
+        'Mato Grosso do Sul',
+        'Mato Grosso',
+        'Minas Gerais',
+        'Pará',
+        'Paraíba',
+        'Paraná',
+        'Pernambuco',
+        'Piauí',
+        'Rio de Janeiro',
+        'Rio Grande do Norte',
+        'Rio Grande do Sul',
+        'Rondônia',
+        'Roraima',
+        'Santa Catarina',
+        'São Paulo',
+        'Sergipe',
+        'Tocantins'
+    ]
+    for (let i = 0; i < estados.length; i++) {
+        let option = document.createElement('option');
+        option.innerText = estados[i];
+        option.value = estados[i];
+        select.appendChild(option);
+    }
+}
+criaOption();
 
-            $max.DatePickerX.init({
-                mondayFirst: true,
-                minDate    : $min,
-                maxDate    : function()
-                {
-                    var date = new Date();
-                    return new Date().setDate(date.getDate() + 10);
-                },
-                clearButton: false
-            });
+var arr = [];
 
-        });
+function calendario() {
+    let myDate = document.getElementById('myDate');
+    
+    if (myDate.value === '') {
+        arr.push('Preencha o campo de data!');
+    }
 
-const estados = 
-[
-    'Acre',
-    'Alagoas',
-    'Amapá',
-    'Amazonas',
-    'Bahia',
-    'Ceará',
-    'Distrito Federal',
-    'Espirito Santo',
-    'Goiás',
-    'Maranhão',
-    'Mato Grosso do Sul',
-    'Mato Grosso',
-    'Minas Gerais',
-    'Pará',
-    'Paraíba',
-    'Paraná',
-    'Pernambuco',
-    'Piauí',
-    'Rio de Janeiro',
-    'Rio Grande do Norte',
-    'Rio Grande do Sul',
-    'Rondônia',
-    'Roraima',
-    'Santa Catarina',
-    'São Paulo',
-    'Sergipe',
-    'Tocantins'
-];
+    const dd = myDate.value.match(/\d+/g)[0];
+    const mm = myDate.value.match(/\d+/g)[1];
+    const aaaa = myDate.value.match(/\d+/g)[2];
 
-const siglas = 
-[
-    'AC',
-    'AL',
-    'AP',
-    'AM',
-    'BA',
-    'CE',
-    'DF',
-    'ES',
-    'GO',
-    'MA',
-    'MS',
-    'MT',
-    'MG',
-    'PA',
-    'PB',
-    'PR',
-    'PE',
-    'PI',
-    'RJ',
-    'RN',
-    'RS',
-    'RO',
-    'RR',
-    'SC',
-    'SP',
-    'SE',
-    'TO'
-]
+    if (myDate.value.match(/(\d{2}\/){2}\d{4}/)) {
+        if (dd > 31 || dd < 0) {
+            myDate.push('Data inválida');
+        } else if (mm > 12 || mm < 0) {
+            myDate.push('Data inválida');
+        } else if (aaaa < 0) {
+            myDate.push('Data inválida');
+        }
+    }
+}
+// calendario();
