@@ -1,0 +1,43 @@
+.container {
+    display: flex;
+}
+
+p {
+    padding: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        background-color: lightcoral;
+        font-family: Helvetica, arial, sans-serif;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    p {
+        padding: 0 5px;
+        line-height: 1.5em;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        background-color: powderblue;
+    }
+
+    .container {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        background-color: lightpink;
+    }
+
+    .container {
+        flex-wrap: wrap;
+    }
+}
