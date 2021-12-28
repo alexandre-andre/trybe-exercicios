@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <center>
+            <h2 id="counter">0</h2>
+        </center>
+        <center>
+            <input style="width:100px;" type="button" id="incrementa" value="Incrementa">
+            <input style="width:100px;" type="button" id="reset" value="Reset">
+        </center>
+    </div>
+
+
+    <script>
+        const buttonIncrementa = document.querySelector('#incrementa');
+        const buttonReset = document.querySelector('#reset');
+        const counter = document.querySelector('#counter');
+        let counterVal = 0;
+        
+        // escreve no HTML o valor de counterVal 
+        function updateDisplay () {
+            counter.innerHTML = counterVal
+        };
+
+        // chama a funcao updateDisplay e incrementa valor a counterVal
+        function incrementaCounter () {
+            updateDisplay(counterVal++)
+        };
+        buttonIncrementa.addEventListener('click', incrementaCounter);
+        
+        // chama a funcao updateDisplay e reseta o valor do contador counterVal
+        function resetaDisplay () {
+            updateDisplay(counterVal = 0)
+        };
+        buttonReset.addEventListener('click', resetaDisplay); 
+    </script>
+</body>
+</html>
