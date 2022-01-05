@@ -29,3 +29,8 @@ const people = [
 ];
 
 // escreva filterPeople abaixo
+const filterPeople = (array, nascimento) => {
+  const millenium = array.filter(({bornIn}) => (bornIn >= nascimento) ? bornIn : false) 
+  return millenium
+}
+console.log(filterPeople(people, 2000))

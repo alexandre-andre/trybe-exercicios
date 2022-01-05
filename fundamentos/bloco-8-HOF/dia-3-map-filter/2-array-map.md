@@ -1,5 +1,6 @@
 # Array.map
-Na função `map`, o que muda é o retorno, ele não altera o array original.
+**O `map` cria um novo array a partir do array original.**
+
 Diferença entre `for` e `map`.
 
 ### for
@@ -76,13 +77,12 @@ A solução é:
 const products = ['Arroz', 'Feijão', 'Alface', 'Tomate'];
 const prices = [2.99, 3.99, 1.5, 2];
 
-const listProducts = (arrProducts, arrPrices) => arrProducts.map((product, index) => (
-    /* cria um objeto para cada produto com seu preço
-        onde, no objeto, usamos a [] para acessar o valor do elemento 
-    */
+const updateProducts = (arrProducts, arrPrices) => arrProducts.map((product, index) => (
+    /* cria um objeto onde: no objeto, usamos a [] para acessar o valor do elemento x */
     { [product]: arrPrices[index] }
 ));
-console.log(listProducts(products, prices));
+const listProducts = updateProducts(products, prices); 
+console.log(listProducts);
 // [[object Object] {
 //   Arroz: 2.99
 // }, [object Object] {

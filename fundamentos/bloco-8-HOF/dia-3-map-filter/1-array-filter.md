@@ -1,4 +1,6 @@
 # Array.filter()
+**O `filter` cria um novo array a partir do array original**
+
 O `filter` é parecido com o `find`. A diferença é que o `filter` em vez de retornar apenas um elemento do array, o `filter` retorna um array com todos os elementos que satisfaçam a condição.
 No exemplo abaixo, apenas substituiremos o find por filter .
 ```javascript
@@ -48,6 +50,40 @@ console.log(rem(arrayMyStudents, 'Ricardo'));
 
 
 
+## filter obj em obj
+```javascript
+const objPeople = [
+  { user: { name: 'José', age: 21 }, isDrive: true},
+  { user: { name: 'Lucas', age: 19 }, isDrive: true},
+  { user: { name: 'Maria', age: 16 }, isDrive: false},
+  { user: { name: 'Gilberto', age: 18 }, isDrive: true},
+  { user: { name: 'Vitor', age: 15 }, isDrive: false},
+];
+
+const sendEmail = (arr) => {
+  const listaFiltrada = arr.filter((user) => user.isDrive);
+  console.log(listaFiltrada)
+  // [
+  //   { user: { name: 'José', age: 21 }, isDrive: true },
+  //   { user: { name: 'Lucas', age: 19 }, isDrive: true },
+  //   { user: { name: 'Gilberto', age: 18 }, isDrive: true }
+  // ]
+
+const listaMapeada = listaFiltrada.map((user) => user.user.name);
+  console.log(listaMapeada)
+  // [ 'José', 'Lucas', 'Gilberto' ]
+
+  listaMapeada.forEach((user) =>
+      console.log(`${user} pode dirigir`)
+  );
+}
+sendEmail(objPeople);
+// José pode dirigir
+// Lucas pode dirigir
+// Gilberto pode dirigir
+```
+
+
 ### Exemplo em filtragem de array e envio de mensagem
 ```javascript
 const listaDeAprovados = [
@@ -93,4 +129,15 @@ pessoasFiltradas.forEach((pessoa) => enviarEmail(pessoa));
 // "sofia@email.com: Parabéns Sofia, sua nota foi {pessoa.nota}"
 // "rafael@email.com: Parabéns Rafael, sua nota foi {pessoa.nota}"
 // "davi@email.com: Parabéns Davi, sua nota foi {pessoa.nota}"
+```
+
+#
+## `Comparando arrays com filter`
+```javascript
+const firstTravelerCities = ['Sydney', 'Berlim', 'Lisboa', 'Sofia', 'Praga', 'Bali']
+const secondTravelerCities = ['Praga', 'Roma', 'Xin Lian', 'Lisboa', 'Zagreb', 'Rio de Janeiro']
+
+const commomCities = firstTravelerCities.filter(city => secondTravelerCities.includes(city))
+console.log(commomCities);
+// [ 'Lisboa', 'Praga' ]
 ```
