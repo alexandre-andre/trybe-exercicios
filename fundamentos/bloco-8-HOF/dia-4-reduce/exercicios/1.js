@@ -5,11 +5,14 @@ const arrays = [
   [4, 5, 6],
 ];
 
-function flatten(array) {
+function flatten(acc, currentValue) {
   // escreva seu código aqui
-  return array.reduce((acc, element) => acc.concat(element))
+  return acc.concat(currentValue)
 }
-console.log(flatten(arrays))
+
+const concatArrays = arrays.reduce(flatten)
+console.log(concatArrays)
+
 
 const estudantes = [
   {

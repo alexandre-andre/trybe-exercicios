@@ -60,16 +60,17 @@ const books = [
       releaseYear: 1928,
   },
 ];
-  
+
 // Adicione o código do exercício aqui:
 // 2 - Crie uma string com os nomes de todas as pessoas autoras.
 // const expectedResult = "George R. R. Martin, J. R. R. Tolkien, Isaac Asimov, Frank Herbert, Stephen King, H. P. Lovecraft.";
-function reduceNames(array) {
+function reduceToNames(array) {
   // escreva seu código aqui
+  // o reduce cria uma string somente com os nomes dos autores
   const string = array.reduce((acc, { author }) => acc + author.name, '')
   console.log(string)
 }
-reduceNames(books)
+reduceToNames(books)
 
 // 3 - Calcule a média de idade que as pessoas autoras tinham quando seus respectivos livros foram lançados.
 // const expectedResult = 43;
@@ -81,6 +82,18 @@ function averageAge(array) {
   console.log(calcIdadeMediaPublicacao);
 }
 averageAge(books)
+
+/** SEGUNDA FORMA */
+function reduceFunction(acc, book) {
+  const age = book.releaseYear - book.author.birthYear;
+  return Math.round(acc += age / books.length);
+}
+
+const teste = books.reduce(reduceFunction, 0);
+console.log(teste)
+
+
+
 
 
 // 4 - Encontre o livro com o maior nome.
@@ -97,7 +110,7 @@ averageAge(books)
 
 function longestNamedBook(array) {
   // escreva seu código aqui
-  const getBiggerName = array.reduce((acc, { name }) => (name.length > acc) ? name : acc )
+  const getBiggerName = array.reduce((acc, { name }) => name.length > acc ? name : acc )
   console.log(getBiggerName)
 }
 longestNamedBook(books)
