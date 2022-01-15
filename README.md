@@ -31,73 +31,73 @@ Nosso primeiro módulo te ensinará tudo que você precisa saber para iniciar su
 - [x] 03.02: Requisitos
 - [x] 03.03: Colocando seu Portfólio Web para o mundo ver!
 - [x] 03.04: Estilizando seu Portfólio Web!
-- [ ] 03.05: Requisitos
-- [ ] 03.06: Layout e Box Model no seu Portfólio Web
-- [ ] 03.07: Requisitos
-- [ ] 03.08: Atualizando seu Portfólio Web para o mundo ver!
-- [ ] 03.09: Agora a prática
-- [ ] 03.10: Validando com CodeSniffer
-- [ ] 03.11: Validando com Lighthouse
+- [x] 03.05: Requisitos
+- [x] 03.06: Layout e Box Model no seu Portfólio Web
+- [x] 03.07: Requisitos
+- [x] 03.08: Atualizando seu Portfólio Web para o mundo ver!
+- [x] 03.09: Agora a prática
+- [x] 03.10: Validando com CodeSniffer
+- [x] 03.11: Validando com Lighthouse
 
 ##### _Bloco 04: Introdução à JavaScript e Lógica de Programação_
 
-- [ ] 04.01: Primeiros Passos
-- [ ] 04.02: Array e loop For
-- [ ] 04.03: Lógica de Programação e Algoritmos
-- [ ] 04.04: Objetos e funções - Parte I
-- [ ] 04.05: Objetos e funções - Parte II
+- [x] 04.01: Primeiros Passos
+- [x] 04.02: Array e loop For
+- [x] 04.03: Lógica de Programação e Algoritmos
+- [x] 04.04: Objetos e funções - Parte I
+- [x] 04.05: Objetos e funções - Parte II
 
 ##### _Bloco 05: JavaScript: DOM, Eventos e Web Storage_
 
-- [ ] 05.01: Funções de manipulação do DOM
-- [ ] 05.02: Trabalhando com elementos
-- [ ] 05.03: Eventos
-- [ ] 05.04: Calendário Tryber
-- [ ] 05.05: Web Storage
-- [ ] 05.06: Aprofunde seus conhecimentos
-- [ ] 05.07: Projeto - Arte com Pixels
-- [ ] 05.08: Projeto - Lista de tarefas
-- [ ] 05.09: Projeto - Meme Generator
-- [ ] 05.10: Projeto - Adivinhe a Cor
-- [ ] 05.11: Projeto - Carta Misteriosa
+- [x] 05.01: Funções de manipulação do DOM
+- [x] 05.02: Trabalhando com elementos
+- [x] 05.03: Eventos
+- [x] 05.04: Calendário Tryber
+- [x] 05.05: Web Storage
+- [x] 05.06: Aprofunde seus conhecimentos
+- [x] 05.07: Projeto - Arte com Pixels
+- [x] 05.08: Projeto - Lista de tarefas
+- [x] 05.09: Projeto - Meme Generator
+- [x] 05.10: Projeto - Adivinhe a Cor
+- [x] 05.11: Projeto - Carta Misteriosa
 
 ##### _Bloco 06: HTML e CSS: Forms, Flexbox e Responsivo_
 
-- [ ] 06.01: Criando um formulário de currículo
-- [ ] 06.02: Bibliotecas JavaScript e Frameworks CSS
-- [ ] 06.03: CSS Flexbox - parte I
-- [ ] 06.04: CSS Flexbox - parte II
-- [ ] 06.05: CSS Responsivo - Mobile First | Criar uma página para uma tela pequena
-- [ ] 06.06: CSS Responsivo - Mobile First | Criando 3 layouts diferentes utilizando o mobile first
-- [ ] 06.07: CSS Responsivo - Mobile First | Criando layouts para dispositivos móveis e para impressão
-- [ ] 06.08: Projeto - Trybewarts
+- [x] 06.01: Criando um formulário de currículo
+- [x] 06.02: Bibliotecas JavaScript e Frameworks CSS
+- [x] 06.03: CSS Flexbox - parte I
+- [x] 06.04: CSS Flexbox - parte II
+- [x] 06.05: CSS Responsivo - Mobile First | Criar uma página para uma tela pequena
+- [x] 06.06: CSS Responsivo - Mobile First | Criando 3 layouts diferentes utilizando o mobile first
+- [x] 06.07: CSS Responsivo - Mobile First | Criando layouts para dispositivos móveis e para impressão
+- [x] 06.08: Projeto - Trybewarts
 
 ##### _Bloco 07: Introdução à JavaScript ES6 e Testes Unitários_
 
-- [ ] 07.01: JavaScript ES6 - let, const, arrow functions e template literals - Parte I
-- [ ] 07.02: JavaScript ES6 - let, const, arrow functions e template literals - Parte II
-- [ ] 07.03: JavaScript ES6 - Objects - Parte I
-- [ ] 07.04: JavaScript ES6 - Objects - Parte II
-- [ ] 07.05: JavaScript ES6 - Objects - Parte Bônus
-- [ ] 07.06: Primeiros passos em Jest - Praticando a implementação de testes
-- [ ] 07.07: Projeto - JavaScript Testes Unitários
+- [x] 07.01: JavaScript ES6 - let, const, arrow functions e template literals - Parte I
+- [x] 07.02: JavaScript ES6 - let, const, arrow functions e template literals - Parte II
+- [x] 07.03: JavaScript ES6 - Objects - Parte I
+- [x] 07.04: JavaScript ES6 - Objects - Parte II
+- [x] 07.05: JavaScript ES6 - Objects - Parte Bônus
+- [x] 07.06: Primeiros passos em Jest - Praticando a implementação de testes
+- [x] 07.07: Projeto - JavaScript Testes Unitários
 
 ##### _Bloco 08: Higher Order Functions do JavaScript ES6_
 
-- [ ] 08.01: JavaScript ES6 - Introdução a Higher Order Functions
-- [ ] 08.02: JavaScript ES6 - Introdução a Higher Order Functions - Bônus
-- [ ] 08.03: JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort
-- [ ] 08.04: JavaScript ES6 - Higher Order Functions - map e filter
-- [ ] 08.05: JavaScript ES6 - Higher Order Functions - reduce
-- [ ] 08.06: JavaScript ES6 - spread operator, parâmetro rest, destructuring e mais
-- [ ] 08.07: Projeto - Zoo functions
+- [x] 08.01: JavaScript ES6 - Introdução a Higher Order Functions
+- [x] 08.02: JavaScript ES6 - Introdução a Higher Order Functions - Bônus
+- [x] 08.03: JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort
+- [x] 08.04: JavaScript ES6 - Higher Order Functions - map e filter
+- [x] 08.05: JavaScript ES6 - Higher Order Functions - reduce
+- [x] 08.06: JavaScript ES6 - spread operator, parâmetro rest, destructuring e mais
+- [x] 08.07: Projeto - Zoo functions
 
 ##### _Bloco 09: JavaScript e Testes Assíncronos_
 
-- [ ] 09.01: JavaScript Assíncrono e Callbacks
-- [ ] 09.02: JavaScript Assíncrono - Fetch API e async/await
-- [ ] 09.03: JavaScript Assíncrono - Fetch API e async/await - Bônus
-- [ ] 09.04: Jest - Testes Assíncronos
-- [ ] 09.05: Projeto - Carrinho de Compras
+- [x] 09.01: JavaScript Assíncrono e Callbacks
+- [x] 09.02: JavaScript Assíncrono - Fetch API e async/await
+- [x] 09.03: JavaScript Assíncrono - Fetch API e async/await - Bônus
+- [x] 09.04: Jest - Testes Assíncronos
+- [x] 09.05: Projeto - Carrinho de Compras
 
 
