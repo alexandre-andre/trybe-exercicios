@@ -13,7 +13,7 @@ const getUser = (callback) => { // 1 => passamos o callback como parametro
     };
     // Retorne a `callback` passada como parâmetro na função `getUser`
     // Dica: você pode manter o `console.log()`
-    console.log(callback(user)); // 2 => imprimimos a callback recebendo user como argumento
+    console.log(callback(user)); // 2 => IMPRIMIMOS NA CALLBACK OS DADOS DO USER
   }, delay());
 };
 
