@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang='pt-BR'>
+<head>
+  <meta charset='UTF-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Calculadora</title>
+  <style>
+    input:valid {
+      color: green !important;
+    }
+    input:invalid {
+      color: red !important;
+    }
+  </style>
+</head>
+<body>
+  <p>Informe dois números para realizar a soma:</p>
+  <label for='value1'>Valor 1:</label>
+  <input type='text' id='value1' pattern="[0-9]+$">
+  <label for='value2'>Valor 2:</label>
+  <input type='text' id='value2' pattern="[0-9]+$">
+  <button id='button'>Somar</button>
+  <p id='result'></p>
+  <script>
+      const value1 = document.querySelector('#value1');
+      const value2 = document.querySelector('#value2');
+      function verifyValues() {
+        // verifica se o valor inserido nao eh um numero   
+        if (isNaN(value1.value) || isNaN(value2.value)) {
+            if (isNaN(value1.value)) {
+                value1.style.borderColor = 'red'
+            }
+            if (isNaN(value2.value)) {
+                value2.style.borderColor = 'red'
+            }
+            throw new Error('Os dois valores devem ser numéricos')            
+        }
+       
+        // verifica se um valor foi inserido
+        if (!value1.value || !value2.value) {
+          if (!value1.value) {
+              value1.style.borderColor = 'red'
+          } 
+          if (!value2.value) {
+              value2.style.borderColor = 'red'
+          }
+          throw new Error('Os dois valores devem ser inseridos')
+        }
+
+    }
+    function sum() {
+        const result = document.querySelector('#result');
+        try {
+          // verifica valores
+            verifyValues()
+            const resultado = parseInt(value1.value) + parseInt(value2.value); 
+            result.style.color = 'black';
+            value1.style.borderColor = 'rgb(118, 118, 118)';
+            value2.style.borderColor = 'rgb(118, 118, 118)';
+            result.innerHTML = `Resultado: ${resultado}`;
+        } catch (error) {
+          // havendo erro, a mensagem de ero será lançada
+            result.style.color = 'red'
+            result.innerHTML = `Erro: ${error.message}`; 
+            throw error.message;
+        } finally {
+            // estando tudo ok, limpa os campos
+            value1.value = '';
+            value2.value = '';
+        }
+    }
+    window.onload = () => {
+      const button = document.querySelector('#button');
+      button.addEventListener('click', sum);
+    }
+  </script>
+</body>
+</html>
