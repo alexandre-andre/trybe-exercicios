@@ -40,11 +40,15 @@ SELECT 10.5 MOD 2; -- 0.5, ou seja, 2 + 2 + 2 + 2 + 2 = 10, restando 0.5
 
 ## Desafios com DIV e MOD
 1. Monte uma query usando o `MOD` juntamente com o `IF` para descobrir se o valor 15 é par ou ímpar. Chame essa coluna de 'Par ou Ímpar' , onde ela pode dizer 'Par' ou 'Ímpar'.
-
 2. Temos uma sala de cinema que comporta 220 pessoas. Quantos grupos completos de 12 pessoas podemos levar ao cinema sem que ninguém fique de fora?
-
 3. Utilizando o resultado anterior, responda à seguinte pergunta: temos lugares sobrando? Se sim, quantos?
+```sql
+SELECT IF(15 MOD 2 = 0, 'par', 'ímpar') AS 'Par ou Ímpar';
 
+SELECT 220 DIV 12;
+
+SELECT IF(220 MOD 12 = 0, 'Não', CONCAT('Sim, ', 220 MOD 12));  
+```
 
 ## Arredondando Valores
 Ter a capacidade de encontrar aproximações de valores é algo extremamente valioso na criação de relatórios e gráficos, que são utilizados por softwares de todos os tipos.
@@ -111,9 +115,16 @@ SELECT ROUND(7 + (RAND() * 6));
 
 
 ## Para Fixar
-- Monte uma query que gere um valor entre 15 e 20 .
-- Monte uma query que exiba o valor arredondado de 15.7515971 com uma precisão de 5 casas decimais.
-- Estamos com uma média de 39.494 de vendas de camisas por mês. Qual é o valor aproximado para baixo dessa média?
-- Temos uma taxa de inscrição de 85.234% no curso de fotografia para iniciantes. Qual é o valor aproximado para cima dessa média?
+1. Monte uma query que gere um valor entre 15 e 20 .
+2. Monte uma query que exiba o valor arredondado de 15.7515971 com uma precisão de 5 casas decimais.
+3. Estamos com uma média de 39.494 de vendas de camisas por mês. Qual é o valor aproximado para baixo dessa média?
+4. Temos uma taxa de inscrição de 85.234% no curso de fotografia para iniciantes. Qual é o valor aproximado para cima dessa média?
+```sql
+SELECT ROUND(15 + RAND() * 20);
 
+SELECT ROUND(15.7515971, 5);
 
+SELECT FLOOR(39.494);
+
+SELECT CEIL(85.234);
+```
