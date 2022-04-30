@@ -41,3 +41,21 @@ Para consolidar esse conhecimento, brinque com os resultados que serão encontra
 5. Mostre o único caso em que, a partir do 4° caractere no título do filme, tem-se a palavra gon e a descrição contém a palavra Documentary .
 6. Mostre os dois filmes cujos títulos ou finalizam com academy ou iniciam com mosquito .
 7. Mostre os seis filmes que contêm as palavras monkey e sumo em suas descrições.
+
+```sql
+USE sakila;
+
+SELECT * FROM film WHERE title LIKE '%ace%';
+
+SELECT * FROM film WHERE description LIKE '%china';
+
+SELECT * FROM film WHERE description LIKE '%girl%' AND title LIKE '%lord';
+
+SELECT * FROM film WHERE title LIKE '___gon%';
+
+SELECT * FROM film WHERE title LIKE '___gon%' AND description LIKE '%Documentary%';
+
+SELECT * FROM film WHERE title LIKE '%academy' OR title LIKE 'mosquito%';
+
+SELECT * FROM film WHERE description LIKE '%monkey%' AND description LIKE '%sumo%';
+```

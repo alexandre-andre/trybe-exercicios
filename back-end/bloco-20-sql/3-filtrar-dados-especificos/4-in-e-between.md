@@ -74,13 +74,17 @@ A melhor forma é clicar no botão `Execution Plan` no **MySQL Workbench** e ver
 5. Monte um relatório que exiba o título e classificação dos 500 primeiros filmes direcionados para as classificações indicativas G, PG e PG-13 . Os resultados devem estar ordenados por título.
 ```sql
 USE sakila;
-SELECT first_name, last_name, email FROM costumer WHERE last_name ('hicks', 'crawford', 'henry', 'boyd', 'mason', 'morales', 'kennedy') ORBER By first_name;
+SELECT first_name, last_name, email FROM costumer
+WHERE last_name ('hicks', 'crawford', 'henry', 'boyd', 'mason', 'morales', 'kennedy')
+ORBER BY first_name;
 
 SELECT email FROM costumer WHERE address_id BETWEEN 172 AND 176 ORBER BY email;
 
-SELECT COUNT(*) quantidade_de_pagamentos FROM payment WHERE DATE(payment_date) BETWEEN '2005-02-01' AND '2008-08-01';
+SELECT COUNT(*) quantidade_de_pagamentos FROM payment
+WHERE DATE(payment_date) BETWEEN '2005-02-01' AND '2008-08-01';
 
-SELECT title, release_year, rental_duration FROM film WHERE rental_duration BETWEEN 3 AND 6 ORDER BY rental_duration DESC, title;
+SELECT title, release_year, rental_duration FROM film
+WHERE rental_duration BETWEEN 3 AND 6 ORDER BY rental_duration DESC, title;
 
 SELECT title, rating FROM film WHERE rating IN('G', 'PG', 'PG-13') ORDER BY title LIMIT 500;
 ```
