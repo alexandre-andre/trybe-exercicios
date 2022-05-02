@@ -23,7 +23,7 @@ SELECT RIGHT('Oi, eu sou um string', 6);
 -- string
 
 -- Exibe o tamanho, em caracteres, da string, a função LENGTH retorna o tamanho em bytes
-SELECT CHAR_LENGTH('Oi, eu sou uma string');
+SELECT LENGTH('Oi, eu sou uma string');
 
 -- Extrai parte de uma string de acordo com o índice de um caractere inicial e a quantidade de caracteres a extrair
 SELECT SUBSTRING('Oi, eu sou uma string', 5, 2);
@@ -69,12 +69,12 @@ SELECT UCASE('trybe');
 SELECT REPLACE('Você já ouviu falar do DuckDuckGo?', 'DuckDuckGo', 'Google');
 
 -- 3
-SELECT CHAR_LENGTH('Uma frase qualquer');
+SELECT LENGTH('Uma frase qualquer');
 
 -- 4
-SELECT SUBSTRING('A linguagem JavaScript está entre as mais usadas', 13, 10);
+SELECT SUBSTRING('A linguagem JavaScript está entre as mais usadas', 13, 10); -- Javacript
 -- OU 
-SELECT SUBSTRING('A linguagem JavaScript está entre as mais usadas', -36, 10);
+SELECT SUBSTRING('A linguagem JavaScript está entre as mais usadas', -36, 10); -- Javascript
 
 -- 5
 SELECT LCASE('RUA NORTE 1500, SÃO PAULO, BRASIL');

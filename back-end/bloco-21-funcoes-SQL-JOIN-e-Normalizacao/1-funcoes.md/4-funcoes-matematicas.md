@@ -22,6 +22,7 @@ SELECT rental_duration * rental_rate FROM sakila.film LIMIT 10;
 O `DIV` retorna o resultado inteiro de uma divisão: **DIV == Math.floor()**
 ```sql
 SELECT 10 DIV 3; -- 3
+SELECT 10 / 3; -- 3.333333...
 SELECT 10 DIV 2; -- 5
 SELECT 14 DIV 3; -- 4
 SELECT 13 DIV 2; -- 6
