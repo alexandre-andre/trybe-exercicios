@@ -1,0 +1,2 @@
+# Tópicos extras sobre MySQL
+Alguns temas ficaram de fora, como `UNIONS`, `SUBQUERIES` e `STORED PROCEDURES/FUNCTIONS`. Esses e outros temas são melhor abordados no conteúdo [Tópicos extras sobre MySQL](https://app.betrybe.com/course/real-life-engineer/mysql-extra) que está disponível na área de [Desenvolvimento Web: Vida Real](https://app.betrybe.com/course/real-life-engineer) no course.
