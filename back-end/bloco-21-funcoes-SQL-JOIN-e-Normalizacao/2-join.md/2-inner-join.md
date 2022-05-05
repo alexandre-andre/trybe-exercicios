@@ -112,3 +112,19 @@ ON ACTOR.actor_id = FA.actor_id
 INNER JOIN sakila.film AS FI
 ON FA.film_id = FI.film_id;
 ``` 
+
+
+## encadeamento de INNER
+```sql
+SELECT c.CustomerName, e.FirstName
+FROM orders o
+INNER JOIN employees e ON o.EmployeeID = e.EmployeeID
+INNER JOIN customers c ON o.CustomerID = c.CustomerID;
+
+
+SELECT c.CustomerName, e.FirstName, s.ShipperName, o.OrderID
+FROM orders o
+INNER JOIN employees e ON o.EmployeeID = e.EmployeeID
+INNER JOIN customers c ON o.CustomerID = c.CustomerID
+INNER JOIN shippers s ON o.ShipperID = s.ShipperID;
+```
