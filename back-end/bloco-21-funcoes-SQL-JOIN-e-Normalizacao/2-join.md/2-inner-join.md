@@ -24,7 +24,7 @@ O código acima, além de ser muito extenso, não permite que o banco de dados d
 ### Código COM Alias
 > Podemos tornar a query mais legível com um alias, além de evitar o erro de ambiguidade de coluna:
 ```sql
-SELECT a.first_name, a.actor_id, f.actor_id
+SELECT a.first_name, a.actor_id, f.actor_id AS film_actor_id
 FROM sakila.actor AS a
 INNER JOIN sakila.film_actor AS f
 ON a.actor_id = f.actor_id;
