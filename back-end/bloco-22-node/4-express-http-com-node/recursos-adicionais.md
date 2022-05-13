@@ -1,0 +1,5 @@
+- [Documentação Express - Rotas](https://expressjs.com/pt-br/guide/routing.html)
+- [Documentação Express - Middleware](https://expressjs.com/pt-br/guide/writing-middleware.html)
+- [Página do MDN sobre Node + Express](https://developer.mozilla.org/pt-BR/docs/Learn/Server-side/Express_Nodejs/Introdu%C3%A7%C3%A3o)
+- [Rest with Node and Express](https://www.robinwieruch.de/node-express-server-rest-api)
+- [Middleware [Node js Design Patterns]](https://www.youtube.com/watch?v=lI2MiMEn9HQ)
