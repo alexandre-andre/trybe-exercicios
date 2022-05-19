@@ -4,33 +4,34 @@ Uma das responsabilidades das pessoas que lidam com o registro de informações 
 
 ### Principais
 ```sql
--- Converte o texto da string para CAIXA ALTA
+-- Converte o texto para CAIXA ALTA
 SELECT UCASE('Oi, eu sou uma string');
 
--- Converte o texto da string para caixa baixa
+-- Converte o texto para caixa baixa
 SELECT LCASE('Oi, eu sou uma string');
 
 -- Substitui as ocorrências de uma substring em uma string
 SELECT REPLACE('Oi, eu sou uma string', 'string', 'cadeia de caracteres');
+-- Oi, eu sou uma cadeia de caracteres
 
--- Retorna a parte da esquerda de uma string de acordo com o
--- número de caracteres especificado
+-- Retorna a parte da esquerda de uma string de acordo com o número de caracteres especificado
 SELECT LEFT('Oi, eu sou uma string', 3);
+-- oi,
 
--- Retorna a parte da direita de uma string de acordo com o
--- número de caracteres especificado
-SELECT RIGHT('Oi, eu sou um string', 6);
+-- Retorna a parte da direita de uma string de acordo com o número de caracteres especificado
+SELECT RIGHT('Oi, eu sou um string', 6); 
+-- string
 
 -- Exibe o tamanho, em caracteres, da string, a função LENGTH retorna o tamanho em bytes
-SELECT CHAR_LENGTH('Oi, eu sou uma string');
+SELECT LENGTH('Oi, eu sou uma string');
 
--- Extrai parte de uma string de acordo com o índice de um caractere inicial
--- e a quantidade de caracteres a extrair
+-- Extrai parte de uma string de acordo com o índice de um caractere inicial e a quantidade de caracteres a extrair
 SELECT SUBSTRING('Oi, eu sou uma string', 5, 2);
+-- Oi, sou uma string
 
--- Se a quantidade de caracteres a extrair não for definida,
--- então a string será extraída do índice inicial definido, até o seu final
+-- Se a quantidade de caracteres a extrair não for definida, então a string será extraída do índice inicial definido, até o seu final
 SELECT SUBSTRING('Oi, eu sou uma string', 5);
+-- Oi,
 ```
 
 
@@ -58,3 +59,23 @@ Agora, vamos fixar os aprendizados com alguns desafios:
 3. Utilizando uma query , encontre quantos caracteres temos em 'Uma frase qualquer' .
 4. Extraia e retorne a palavra "JavaScript" da frase 'A linguagem JavaScript está entre as mais usadas' .
 5. Por fim, padronize a string 'RUA NORTE 1500, SÃO PAULO, BRASIL' para que suas informações estejam todas em caixa baixa.
+```sql
+USE
+
+-- 1
+SELECT UCASE('trybe');
+
+-- 2
+SELECT REPLACE('Você já ouviu falar do DuckDuckGo?', 'DuckDuckGo', 'Google');
+
+-- 3
+SELECT LENGTH('Uma frase qualquer');
+
+-- 4
+SELECT SUBSTRING('A linguagem JavaScript está entre as mais usadas', 13, 10); -- Javacript
+-- OU 
+SELECT SUBSTRING('A linguagem JavaScript está entre as mais usadas', -36, 10); -- Javascript
+
+-- 5
+SELECT LCASE('RUA NORTE 1500, SÃO PAULO, BRASIL');
+```

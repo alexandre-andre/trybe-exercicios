@@ -18,3 +18,11 @@ Para praticar, vamos encontrar algumas informações sobre os filmes cadastrados
 - A duração máxima dos filmes como 'Duração Máxima';
 - A soma de todas as durações como 'Tempo de Exibição Total';
 - E finalmente, a quantidade total de filmes cadastrados na tabela sakila.film como 'Filmes Registrados'.
+```sql
+SELECT AVG(length) AS 'Média de Duração'
+       MIN(length) AS 'Duração Mínima'
+       MAX(length) AS 'Duração Máxima'
+       SUM(length) AS 'Tempo de Exibição Total'
+       COUNT(*) AS 'Filmes Registrados'
+FROM sakila.film;
+```
