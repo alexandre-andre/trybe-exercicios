@@ -1,0 +1,3 @@
+- [Best Practices with Node.js](https://github.com/goldbergyoni/nodebestpractices#1-project-structure-practices)
+- [The Service Layer - Martin Fowler](https://martinfowler.com/eaaCatalog/serviceLayer.html)
+- [Bulletproof node.js project architecture](https://dev.to/santypk4/bulletproof-node-js-project-architecture-4epf)
